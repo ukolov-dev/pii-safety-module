@@ -1,0 +1,166 @@
+{
+  "name": "ru_pii_adversarial_v1",
+  "version": 1,
+  "sources": [
+    "../../database/chunks/CH-SRC-001-05.md",
+    "../../database/chunks/CH-SRC-001-06.md"
+  ],
+  "annotation": "Gold entities are exact, non-overlapping substrings. Empty entities mean that the text must not be treated as personal data. occurrence is zero-based.",
+  "cases": [
+    {
+      "id": "positive-person-uppercase",
+      "text": "ФИО заявителя: СИДОРОВ ИВАН ПЕТРОВИЧ.",
+      "entities": [{"type": "PERSON", "value": "СИДОРОВ ИВАН ПЕТРОВИЧ"}]
+    },
+    {
+      "id": "positive-person-hyphenated",
+      "text": "Получатель Анна-Мария Волкова подтвердила заявку.",
+      "entities": [{"type": "PERSON", "value": "Анна-Мария Волкова"}]
+    },
+    {
+      "id": "positive-birth-date-year-first",
+      "text": "Дата рождения: 1987.12.03.",
+      "entities": [{"type": "BIRTH_DATE", "value": "1987.12.03"}]
+    },
+    {
+      "id": "positive-birth-date-month-first",
+      "text": "Дата рождения в формате месяц-день-год: 03.12.1987.",
+      "entities": [{"type": "BIRTH_DATE", "value": "03.12.1987"}]
+    },
+    {
+      "id": "positive-birth-date-text-uppercase",
+      "text": "ЗАЯВИТЕЛЬ РОДИЛСЯ 5 МАЯ 1990 ГОДА.",
+      "entities": [{"type": "BIRTH_DATE", "value": "5 МАЯ 1990 ГОДА"}]
+    },
+    {
+      "id": "positive-place-of-birth",
+      "text": "Место рождения клиента — г. Нижний Новгород.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "г. Нижний Новгород"}]
+    },
+    {
+      "id": "positive-passport-words-separated",
+      "text": "Паспорт: серия 45 08, номер 123456.",
+      "entities": [{"type": "PASSPORT_RF", "value": "серия 45 08, номер 123456"}]
+    },
+    {
+      "id": "positive-citizenship-lowercase-label",
+      "text": "гражданство: Российская Федерация.",
+      "entities": [{"type": "CITIZENSHIP", "value": "Российская Федерация"}]
+    },
+    {
+      "id": "positive-passport-issuer",
+      "text": "Паспорт выдан ОТДЕЛОМ УФМС РОССИИ ПО Г. МОСКВЕ В ЦАО.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "ОТДЕЛОМ УФМС РОССИИ ПО Г. МОСКВЕ В ЦАО"}]
+    },
+    {
+      "id": "positive-division-code-spaces",
+      "text": "Код подразделения 770 001.",
+      "entities": [{"type": "DIVISION_CODE", "value": "770 001"}]
+    },
+    {
+      "id": "positive-passport-issue-date",
+      "text": "Дата выдачи паспорта: 2018-12-03.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "2018-12-03"}]
+    },
+    {
+      "id": "positive-driver-license-compact",
+      "text": "Водительское удостоверение №7711123456.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "7711123456"}]
+    },
+    {
+      "id": "positive-address-components",
+      "text": "Адрес клиента: страна Россия, индекс 190000, город Санкт-Петербург, улица Марата, дом 10Б, квартира 27.",
+      "entities": [
+        {"type": "ADDRESS_COUNTRY", "value": "Россия"},
+        {"type": "ADDRESS_POSTAL_CODE", "value": "190000"},
+        {"type": "ADDRESS_CITY", "value": "Санкт-Петербург"},
+        {"type": "ADDRESS_STREET", "value": "Марата"},
+        {"type": "ADDRESS_HOUSE", "value": "10Б"},
+        {"type": "ADDRESS_APARTMENT", "value": "27"}
+      ]
+    },
+    {
+      "id": "positive-email-mixed-case-plus",
+      "text": "E-mail заявителя: A.Petrov+Banking@Example.COM.",
+      "entities": [{"type": "EMAIL", "value": "A.Petrov+Banking@Example.COM"}]
+    },
+    {
+      "id": "positive-phone-compact",
+      "text": "Личный телефон: 89991234567.",
+      "entities": [{"type": "PHONE_RF", "value": "89991234567"}]
+    },
+    {
+      "id": "positive-inn-twelve-digits",
+      "text": "ИНН физического лица: 500100732259.",
+      "entities": [{"type": "INN", "value": "500100732259"}]
+    },
+    {
+      "id": "positive-bank-card-hyphens",
+      "text": "Банковская карта: 4111-1111-1111-1111.",
+      "entities": [{"type": "BANK_CARD", "value": "4111-1111-1111-1111"}]
+    },
+    {
+      "id": "positive-cvv2-four-digits",
+      "text": "Защитный код CVV2=1234.",
+      "entities": [{"type": "CVV", "value": "1234"}]
+    },
+    {
+      "id": "positive-pin-latin-label",
+      "text": "PIN 4821 нельзя сообщать третьим лицам.",
+      "entities": [{"type": "PIN", "value": "4821"}]
+    },
+    {
+      "id": "positive-cardholder-name",
+      "text": "CARDHOLDER NAME: IVAN-IVAN PETROV.",
+      "entities": [{"type": "CARDHOLDER_NAME", "value": "IVAN-IVAN PETROV"}]
+    },
+    {
+      "id": "positive-repeated-phone",
+      "text": "Телефон клиента +7 999 123-45-67; дубль в анкете +7 999 123-45-67.",
+      "entities": [
+        {"type": "PHONE_RF", "value": "+7 999 123-45-67", "occurrence": 0},
+        {"type": "PHONE_RF", "value": "+7 999 123-45-67", "occurrence": 1}
+      ]
+    },
+    {
+      "id": "negative-famous-person",
+      "text": "На уроке обсуждали роман Льва Толстого «Война и мир».",
+      "entities": []
+    },
+    {
+      "id": "negative-bank-office-address",
+      "text": "Офис банка работает по адресу: город Казань, улица Кремлёвская, дом 8.",
+      "entities": []
+    },
+    {
+      "id": "negative-invalid-checksums",
+      "text": "Тестовые номера: ИНН 1234567890, карта 4111 1111 1111 1112.",
+      "entities": []
+    },
+    {
+      "id": "negative-invalid-calendar-dates",
+      "text": "Ошибки в макете: дата рождения 31.02.2020 и 29.02.2019.",
+      "entities": []
+    },
+    {
+      "id": "negative-order-and-document-like-numbers",
+      "text": "Заказ 45 08 123456 и код склада 770-001 не являются личными данными.",
+      "entities": []
+    },
+    {
+      "id": "negative-bank-hotline",
+      "text": "Горячая линия банка: 8 800 555-35-35.",
+      "entities": []
+    },
+    {
+      "id": "negative-shared-mailbox",
+      "text": "Общий адрес службы поддержки: support@example.org.",
+      "entities": []
+    },
+    {
+      "id": "negative-geography",
+      "text": "Россия — крупнейшее государство мира, а Москва — его столица.",
+      "entities": []
+    }
+  ]
+}

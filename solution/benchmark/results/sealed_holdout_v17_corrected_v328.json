@@ -1,0 +1,4972 @@
+{
+  "dataset": "sealed_holdout_v17_corrected_component_spans",
+  "dataset_version": "17-c1",
+  "sources": [
+    "RAW/requirements.md",
+    "database/chunks/CH-SRC-001-05.md",
+    "database/chunks/CH-SRC-001-06.md",
+    "database/chunks/CH-SRC-001-09.md",
+    "database/chunks/CH-SRC-002-06.md",
+    "database/chunks/CH-SRC-003-03.md",
+    "database/chunks/CH-SRC-003-04.md"
+  ],
+  "case_count": 280,
+  "overall": {
+    "true_positive": 356,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "by_type": {
+    "ADDRESS_APARTMENT": {
+      "true_positive": 24,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_CITY": {
+      "true_positive": 24,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_COUNTRY": {
+      "true_positive": 23,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_HOUSE": {
+      "true_positive": 24,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_POSTAL_CODE": {
+      "true_positive": 24,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_STREET": {
+      "true_positive": 24,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BANK_CARD": {
+      "true_positive": 15,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BIRTH_DATE": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CARDHOLDER_NAME": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CITIZENSHIP": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CVV": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DIVISION_CODE": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DRIVER_LICENSE_RF": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "EMAIL": {
+      "true_positive": 14,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "INN": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_ISSUER": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_ISSUE_DATE": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_RF": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PERSON": {
+      "true_positive": 19,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PHONE_RF": {
+      "true_positive": 15,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PIN": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PLACE_OF_BIRTH": {
+      "true_positive": 12,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "mask_exact": {
+    "passed": 280,
+    "total": 280,
+    "rate": 1.0
+  },
+  "round_trip_exact": {
+    "passed": 280,
+    "total": 280,
+    "rate": 1.0
+  },
+  "cases": [
+    {
+      "id": "v17-0001",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента: {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента: {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0002",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "actual_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0003",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ФИО клиента\"]=\"{{PERSON_1}}\"",
+      "actual_mask": "profile[\"ФИО клиента\"]=\"{{PERSON_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0004",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента — {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента — {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0005",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента: {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента: {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0006",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "actual_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0007",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ФИО клиента\"]=\"{{PERSON_1}}\"",
+      "actual_mask": "profile[\"ФИО клиента\"]=\"{{PERSON_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0008",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента — {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента — {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0009",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента: {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента: {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0010",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "actual_mask": "В анкете поле «ФИО клиента» содержит {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0011",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "actual_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0012",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0013",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дата рождения\"]=\"{{BIRTH_DATE_1}}\"",
+      "actual_mask": "profile[\"Дата рождения\"]=\"{{BIRTH_DATE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0014",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения — {{BIRTH_DATE_1}}.",
+      "actual_mask": "Дата рождения — {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0015",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "actual_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0016",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0017",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дата рождения\"]=\"{{BIRTH_DATE_1}}\"",
+      "actual_mask": "profile[\"Дата рождения\"]=\"{{BIRTH_DATE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0018",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения — {{BIRTH_DATE_1}}.",
+      "actual_mask": "Дата рождения — {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0019",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "actual_mask": "Дата рождения: {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0020",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата рождения» содержит {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0021",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0022",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0023",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Место рождения\"]=\"{{PLACE_OF_BIRTH_1}}\"",
+      "actual_mask": "profile[\"Место рождения\"]=\"{{PLACE_OF_BIRTH_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0024",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения — {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения — {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0025",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0026",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0027",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Место рождения\"]=\"{{PLACE_OF_BIRTH_1}}\"",
+      "actual_mask": "profile[\"Место рождения\"]=\"{{PLACE_OF_BIRTH_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0028",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения — {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения — {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0029",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0030",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "В анкете поле «Место рождения» содержит {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0031",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0032",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "actual_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0033",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Паспорт клиента\"]=\"{{PASSPORT_RF_1}}\"",
+      "actual_mask": "profile[\"Паспорт клиента\"]=\"{{PASSPORT_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0034",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт клиента — {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт клиента — {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0035",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0036",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "actual_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0037",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Паспорт клиента\"]=\"{{PASSPORT_RF_1}}\"",
+      "actual_mask": "profile[\"Паспорт клиента\"]=\"{{PASSPORT_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0038",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт клиента — {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт клиента — {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0039",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт клиента: {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0040",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "actual_mask": "В анкете поле «Паспорт клиента» содержит {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0041",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "actual_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0042",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "actual_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0043",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Гражданство клиента\"]=\"{{CITIZENSHIP_1}}\"",
+      "actual_mask": "profile[\"Гражданство клиента\"]=\"{{CITIZENSHIP_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0044",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Гражданство клиента — {{CITIZENSHIP_1}}.",
+      "actual_mask": "Гражданство клиента — {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0045",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "actual_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0046",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "actual_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0047",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Гражданство клиента\"]=\"{{CITIZENSHIP_1}}\"",
+      "actual_mask": "profile[\"Гражданство клиента\"]=\"{{CITIZENSHIP_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0048",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Гражданство клиента — {{CITIZENSHIP_1}}.",
+      "actual_mask": "Гражданство клиента — {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0049",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "actual_mask": "Гражданство клиента: {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0050",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "actual_mask": "В анкете поле «Гражданство клиента» содержит {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0051",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0052",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0053",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Паспорт выдан\"]=\"{{PASSPORT_ISSUER_1}}\"",
+      "actual_mask": "profile[\"Паспорт выдан\"]=\"{{PASSPORT_ISSUER_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0054",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт выдан — {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Паспорт выдан — {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0055",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0056",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0057",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Паспорт выдан\"]=\"{{PASSPORT_ISSUER_1}}\"",
+      "actual_mask": "profile[\"Паспорт выдан\"]=\"{{PASSPORT_ISSUER_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0058",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт выдан — {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Паспорт выдан — {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0059",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Паспорт выдан: {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0060",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "В анкете поле «Паспорт выдан» содержит {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0061",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0062",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "actual_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0063",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Код подразделения\"]=\"{{DIVISION_CODE_1}}\"",
+      "actual_mask": "profile[\"Код подразделения\"]=\"{{DIVISION_CODE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0064",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения — {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код подразделения — {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0065",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0066",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "actual_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0067",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Код подразделения\"]=\"{{DIVISION_CODE_1}}\"",
+      "actual_mask": "profile[\"Код подразделения\"]=\"{{DIVISION_CODE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0068",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения — {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код подразделения — {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0069",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код подразделения: {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0070",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "actual_mask": "В анкете поле «Код подразделения» содержит {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0071",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0072",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0073",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дата выдачи паспорта\"]=\"{{PASSPORT_ISSUE_DATE_1}}\"",
+      "actual_mask": "profile[\"Дата выдачи паспорта\"]=\"{{PASSPORT_ISSUE_DATE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0074",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата выдачи паспорта — {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Дата выдачи паспорта — {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0075",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0076",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0077",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дата выдачи паспорта\"]=\"{{PASSPORT_ISSUE_DATE_1}}\"",
+      "actual_mask": "profile[\"Дата выдачи паспорта\"]=\"{{PASSPORT_ISSUE_DATE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0078",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата выдачи паспорта — {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Дата выдачи паспорта — {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0079",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Дата выдачи паспорта: {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0080",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "В анкете поле «Дата выдачи паспорта» содержит {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0081",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0082",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0083",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Водительское удостоверение\"]=\"{{DRIVER_LICENSE_RF_1}}\"",
+      "actual_mask": "profile[\"Водительское удостоверение\"]=\"{{DRIVER_LICENSE_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0084",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительское удостоверение — {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительское удостоверение — {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0085",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0086",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0087",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Водительское удостоверение\"]=\"{{DRIVER_LICENSE_RF_1}}\"",
+      "actual_mask": "profile[\"Водительское удостоверение\"]=\"{{DRIVER_LICENSE_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0088",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительское удостоверение — {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительское удостоверение — {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0089",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительское удостоверение: {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0090",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "В анкете поле «Водительское удостоверение» содержит {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0091",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0092",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, д. {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, д. {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0093",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Адрес регистрации\"]=\"{{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, кв {{ADDRESS_APARTMENT_1}}\"",
+      "actual_mask": "profile[\"Адрес регистрации\"]=\"{{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, кв {{ADDRESS_APARTMENT_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0094",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес регистрации — {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира № {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес регистрации — {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира № {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0095",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, проспект {{ADDRESS_STREET_1}}, владение {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, проспект {{ADDRESS_STREET_1}}, владение {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0096",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0097",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Адрес регистрации\"]=\"{{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}\"",
+      "actual_mask": "profile[\"Адрес регистрации\"]=\"{{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0098",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес регистрации — {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес регистрации — {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0099",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0100",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Адрес регистрации» содержит {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0101",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0102",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0103",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Страна проживания клиента\"]=\"{{ADDRESS_COUNTRY_1}}\"",
+      "actual_mask": "profile[\"Страна проживания клиента\"]=\"{{ADDRESS_COUNTRY_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0104",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Страна проживания клиента — {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "Страна проживания клиента — {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0105",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0106",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0107",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Страна проживания клиента\"]=\"{{ADDRESS_COUNTRY_1}}\"",
+      "actual_mask": "profile[\"Страна проживания клиента\"]=\"{{ADDRESS_COUNTRY_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0108",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Страна проживания клиента — {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "Страна проживания клиента — {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0109",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "Страна проживания клиента: {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0110",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "actual_mask": "В анкете поле «Страна проживания клиента» содержит {{ADDRESS_COUNTRY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0111",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0112",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0113",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Почтовый индекс получателя\"]=\"{{ADDRESS_POSTAL_CODE_1}}\"",
+      "actual_mask": "profile[\"Почтовый индекс получателя\"]=\"{{ADDRESS_POSTAL_CODE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0114",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс получателя — {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "Почтовый индекс получателя — {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0115",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0116",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0117",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Почтовый индекс получателя\"]=\"{{ADDRESS_POSTAL_CODE_1}}\"",
+      "actual_mask": "profile[\"Почтовый индекс получателя\"]=\"{{ADDRESS_POSTAL_CODE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0118",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс получателя — {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "Почтовый индекс получателя — {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0119",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "Почтовый индекс получателя: {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0120",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "actual_mask": "В анкете поле «Почтовый индекс получателя» содержит {{ADDRESS_POSTAL_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0121",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "actual_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0122",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "actual_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0123",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Город проживания клиента\"]=\"{{ADDRESS_CITY_1}}\"",
+      "actual_mask": "profile[\"Город проживания клиента\"]=\"{{ADDRESS_CITY_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0124",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Город проживания клиента — {{ADDRESS_CITY_1}}.",
+      "actual_mask": "Город проживания клиента — {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0125",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "actual_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0126",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "actual_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0127",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Город проживания клиента\"]=\"{{ADDRESS_CITY_1}}\"",
+      "actual_mask": "profile[\"Город проживания клиента\"]=\"{{ADDRESS_CITY_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0128",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Город проживания клиента — {{ADDRESS_CITY_1}}.",
+      "actual_mask": "Город проживания клиента — {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0129",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "actual_mask": "Город проживания клиента: {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0130",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "actual_mask": "В анкете поле «Город проживания клиента» содержит {{ADDRESS_CITY_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0131",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица регистрации: улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "Улица регистрации: улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0132",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0133",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Улица регистрации\"]=\"улица {{ADDRESS_STREET_1}}\"",
+      "actual_mask": "profile[\"Улица регистрации\"]=\"улица {{ADDRESS_STREET_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0134",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица регистрации — улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "Улица регистрации — улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0135",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица регистрации: проспект {{ADDRESS_STREET_1}}.",
+      "actual_mask": "Улица регистрации: проспект {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0136",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0137",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Улица регистрации\"]=\"улица {{ADDRESS_STREET_1}}\"",
+      "actual_mask": "profile[\"Улица регистрации\"]=\"улица {{ADDRESS_STREET_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0138",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица регистрации — улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "Улица регистрации — улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0139",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица регистрации: улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "Улица регистрации: улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0140",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "actual_mask": "В анкете поле «Улица регистрации» содержит улица {{ADDRESS_STREET_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0141",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом клиента: дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "Дом клиента: дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0142",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дом клиента» содержит д. {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "В анкете поле «Дом клиента» содержит д. {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0143",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дом клиента\"]=\"дом {{ADDRESS_HOUSE_1}}\"",
+      "actual_mask": "profile[\"Дом клиента\"]=\"дом {{ADDRESS_HOUSE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0144",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом клиента — дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "Дом клиента — дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0145",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом клиента: владение {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "Дом клиента: владение {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0146",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дом клиента» содержит дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "В анкете поле «Дом клиента» содержит дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0147",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Дом клиента\"]=\"дом {{ADDRESS_HOUSE_1}}\"",
+      "actual_mask": "profile[\"Дом клиента\"]=\"дом {{ADDRESS_HOUSE_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0148",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом клиента — дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "Дом клиента — дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0149",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом клиента: дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "Дом клиента: дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0150",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Дом клиента» содержит дом {{ADDRESS_HOUSE_1}}.",
+      "actual_mask": "В анкете поле «Дом клиента» содержит дом {{ADDRESS_HOUSE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0151",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0152",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0153",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Квартира клиента\"]=\"кв {{ADDRESS_APARTMENT_1}}\"",
+      "actual_mask": "profile[\"Квартира клиента\"]=\"кв {{ADDRESS_APARTMENT_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0154",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира клиента — квартира № {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Квартира клиента — квартира № {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0155",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0156",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0157",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Квартира клиента\"]=\"квартира {{ADDRESS_APARTMENT_1}}\"",
+      "actual_mask": "profile[\"Квартира клиента\"]=\"квартира {{ADDRESS_APARTMENT_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0158",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира клиента — квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Квартира клиента — квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0159",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Квартира клиента: квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0160",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "В анкете поле «Квартира клиента» содержит квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0161",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Email клиента: {{EMAIL_1}}.",
+      "actual_mask": "Email клиента: {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0162",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "actual_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0163",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Email клиента\"]=\"{{EMAIL_1}}\"",
+      "actual_mask": "profile[\"Email клиента\"]=\"{{EMAIL_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0164",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Email клиента — {{EMAIL_1}}.",
+      "actual_mask": "Email клиента — {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0165",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Email клиента: {{EMAIL_1}}.",
+      "actual_mask": "Email клиента: {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0166",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "actual_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0167",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Email клиента\"]=\"{{EMAIL_1}}\"",
+      "actual_mask": "profile[\"Email клиента\"]=\"{{EMAIL_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0168",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Email клиента — {{EMAIL_1}}.",
+      "actual_mask": "Email клиента — {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0169",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Email клиента: {{EMAIL_1}}.",
+      "actual_mask": "Email клиента: {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0170",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "actual_mask": "В анкете поле «Email клиента» содержит {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0171",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "actual_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0172",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "actual_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0173",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Телефон клиента\"]=\"{{PHONE_RF_1}}\"",
+      "actual_mask": "profile[\"Телефон клиента\"]=\"{{PHONE_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0174",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон клиента — {{PHONE_RF_1}}.",
+      "actual_mask": "Телефон клиента — {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0175",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "actual_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0176",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "actual_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0177",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Телефон клиента\"]=\"{{PHONE_RF_1}}\"",
+      "actual_mask": "profile[\"Телефон клиента\"]=\"{{PHONE_RF_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0178",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон клиента — {{PHONE_RF_1}}.",
+      "actual_mask": "Телефон клиента — {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0179",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "actual_mask": "Телефон клиента: {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0180",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "actual_mask": "В анкете поле «Телефон клиента» содержит {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0181",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН клиента: {{INN_1}}.",
+      "actual_mask": "ИНН клиента: {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0182",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "actual_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0183",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ИНН клиента\"]=\"{{INN_1}}\"",
+      "actual_mask": "profile[\"ИНН клиента\"]=\"{{INN_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0184",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН клиента — {{INN_1}}.",
+      "actual_mask": "ИНН клиента — {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0185",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН клиента: {{INN_1}}.",
+      "actual_mask": "ИНН клиента: {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0186",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "actual_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0187",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ИНН клиента\"]=\"{{INN_1}}\"",
+      "actual_mask": "profile[\"ИНН клиента\"]=\"{{INN_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0188",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН клиента — {{INN_1}}.",
+      "actual_mask": "ИНН клиента — {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0189",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН клиента: {{INN_1}}.",
+      "actual_mask": "ИНН клиента: {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0190",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "actual_mask": "В анкете поле «ИНН клиента» содержит {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0191",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "actual_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0192",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "actual_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0193",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Номер карты клиента\"]=\"{{BANK_CARD_1}}\"",
+      "actual_mask": "profile[\"Номер карты клиента\"]=\"{{BANK_CARD_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0194",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Номер карты клиента — {{BANK_CARD_1}}.",
+      "actual_mask": "Номер карты клиента — {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0195",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "actual_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0196",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "actual_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0197",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Номер карты клиента\"]=\"{{BANK_CARD_1}}\"",
+      "actual_mask": "profile[\"Номер карты клиента\"]=\"{{BANK_CARD_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0198",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Номер карты клиента — {{BANK_CARD_1}}.",
+      "actual_mask": "Номер карты клиента — {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0199",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "actual_mask": "Номер карты клиента: {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0200",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "actual_mask": "В анкете поле «Номер карты клиента» содержит {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0201",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CVV карты клиента: {{CVV_1}}.",
+      "actual_mask": "CVV карты клиента: {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0202",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "actual_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0203",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"CVV карты клиента\"]=\"{{CVV_1}}\"",
+      "actual_mask": "profile[\"CVV карты клиента\"]=\"{{CVV_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0204",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CVV карты клиента — {{CVV_1}}.",
+      "actual_mask": "CVV карты клиента — {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0205",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CVV карты клиента: {{CVV_1}}.",
+      "actual_mask": "CVV карты клиента: {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0206",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "actual_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0207",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"CVV карты клиента\"]=\"{{CVV_1}}\"",
+      "actual_mask": "profile[\"CVV карты клиента\"]=\"{{CVV_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0208",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CVV карты клиента — {{CVV_1}}.",
+      "actual_mask": "CVV карты клиента — {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0209",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CVV карты клиента: {{CVV_1}}.",
+      "actual_mask": "CVV карты клиента: {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0210",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "actual_mask": "В анкете поле «CVV карты клиента» содержит {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0211",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "actual_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0212",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "actual_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0213",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ПИН-код карты клиента\"]=\"{{PIN_1}}\"",
+      "actual_mask": "profile[\"ПИН-код карты клиента\"]=\"{{PIN_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0214",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ПИН-код карты клиента — {{PIN_1}}.",
+      "actual_mask": "ПИН-код карты клиента — {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0215",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "actual_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0216",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "actual_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0217",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"ПИН-код карты клиента\"]=\"{{PIN_1}}\"",
+      "actual_mask": "profile[\"ПИН-код карты клиента\"]=\"{{PIN_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0218",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ПИН-код карты клиента — {{PIN_1}}.",
+      "actual_mask": "ПИН-код карты клиента — {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0219",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "actual_mask": "ПИН-код карты клиента: {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0220",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "actual_mask": "В анкете поле «ПИН-код карты клиента» содержит {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0221",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0222",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0223",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Имя держателя карты\"]=\"{{CARDHOLDER_NAME_1}}\"",
+      "actual_mask": "profile[\"Имя держателя карты\"]=\"{{CARDHOLDER_NAME_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0224",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Имя держателя карты — {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Имя держателя карты — {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0225",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0226",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0227",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "profile[\"Имя держателя карты\"]=\"{{CARDHOLDER_NAME_1}}\"",
+      "actual_mask": "profile[\"Имя держателя карты\"]=\"{{CARDHOLDER_NAME_1}}\"",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0228",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Имя держателя карты — {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Имя держателя карты — {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0229",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Имя держателя карты: {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0230",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "В анкете поле «Имя держателя карты» содержит {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0231",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Александр Сергеевич Пушкин родился в Москве в 1799 году.",
+      "actual_mask": "Александр Сергеевич Пушкин родился в Москве в 1799 году.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0232",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Роман «Война и мир» написал Лев Николаевич Толстой.",
+      "actual_mask": "Роман «Война и мир» написал Лев Николаевич Толстой.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0233",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Юрий Гагарин совершил первый космический полёт 12 апреля 1961 года.",
+      "actual_mask": "Юрий Гагарин совершил первый космический полёт 12 апреля 1961 года.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0234",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Таблица Менделеева названа в честь Дмитрия Ивановича Менделеева.",
+      "actual_mask": "Таблица Менделеева названа в честь Дмитрия Ивановича Менделеева.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0235",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Пётр Чайковский — автор балета «Щелкунчик».",
+      "actual_mask": "Пётр Чайковский — автор балета «Щелкунчик».",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0236",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес Эрмитажа: Дворцовая площадь, 2 — публичная справочная информация.",
+      "actual_mask": "Адрес Эрмитажа: Дворцовая площадь, 2 — публичная справочная информация.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0237",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Главный корпус МГУ расположен по адресу Ленинские горы, дом 1.",
+      "actual_mask": "Главный корпус МГУ расположен по адресу Ленинские горы, дом 1.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0238",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Почтовый индекс 101000 относится к нескольким отделениям в центре Москвы.",
+      "actual_mask": "Почтовый индекс 101000 относится к нескольким отделениям в центре Москвы.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0239",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Телефон 112 используется для вызова экстренных служб.",
+      "actual_mask": "Телефон 112 используется для вызова экстренных служб.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0240",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "На странице документации приведён пример user@example.com.",
+      "actual_mask": "На странице документации приведён пример user@example.com.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0241",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Версия сборки 7.921.418.63.27 не является телефонным номером.",
+      "actual_mask": "Версия сборки 7.921.418.63.27 не является телефонным номером.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0242",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Ошибка HTTP 401 означает, что запрос не аутентифицирован.",
+      "actual_mask": "Ошибка HTTP 401 означает, что запрос не аутентифицирован.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0243",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Параметр timeout=443086 задаёт число микросекунд, а не индекс.",
+      "actual_mask": "Параметр timeout=443086 задаёт число микросекунд, а не индекс.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0244",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Значение trace_id=7701000000 служит техническим идентификатором.",
+      "actual_mask": "Значение trace_id=7701000000 служит техническим идентификатором.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0245",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Последовательность 2204 0731 9042 8651 — тестовый вектор, не реквизит клиента.",
+      "actual_mask": "Последовательность 2204 0731 9042 8651 — тестовый вектор, не реквизит клиента.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0246",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В инструкции написано: «Введите четыре цифры ПИН-кода», самого кода здесь нет.",
+      "actual_mask": "В инструкции написано: «Введите четыре цифры ПИН-кода», самого кода здесь нет.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0247",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Поле CVV должно содержать три цифры, но значение не передано.",
+      "actual_mask": "Поле CVV должно содержать три цифры, но значение не передано.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0248",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Слово «Россия» в названии книги не описывает гражданство человека.",
+      "actual_mask": "Слово «Россия» в названии книги не описывает гражданство человека.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0249",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Краснодар победил в футбольном матче со счётом 2:1.",
+      "actual_mask": "Краснодар победил в футбольном матче со счётом 2:1.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0250",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Улица Красная перекрыта для городского фестиваля.",
+      "actual_mask": "Улица Красная перекрыта для городского фестиваля.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0251",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дом 2 считается памятником архитектуры регионального значения.",
+      "actual_mask": "Дом 2 считается памятником архитектуры регионального значения.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0252",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Квартира № 50 — название советского мультфильма.",
+      "actual_mask": "Квартира № 50 — название советского мультфильма.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0253",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата 2026-09-23 обозначает выпуск релиза приложения.",
+      "actual_mask": "Дата 2026-09-23 обозначает выпуск релиза приложения.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0254",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код подразделения в схеме API имеет тип string.",
+      "actual_mask": "Код подразделения в схеме API имеет тип string.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0255",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Серия и номер паспорта обязательны при очной идентификации.",
+      "actual_mask": "Серия и номер паспорта обязательны при очной идентификации.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0256",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Карты платёжной системы могут начинаться с цифр 2200.",
+      "actual_mask": "Карты платёжной системы могут начинаться с цифр 2200.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0257",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН организации проверяется отдельным сервисом.",
+      "actual_mask": "ИНН организации проверяется отдельным сервисом.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0258",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Переменная cardholder_name пока равна null.",
+      "actual_mask": "Переменная cardholder_name пока равна null.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0259",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Лог: email field omitted; phone field omitted; address field omitted.",
+      "actual_mask": "Лог: email field omitted; phone field omitted; address field omitted.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0260",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Москва — столица Российской Федерации.",
+      "actual_mask": "Москва — столица Российской Федерации.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0261",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Клиент {{PERSON_1}}, дата рождения {{BIRTH_DATE_1}}, телефон {{PHONE_RF_1}}.",
+      "actual_mask": "Клиент {{PERSON_1}}, дата рождения {{BIRTH_DATE_1}}, телефон {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0262",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Анкета: {{PERSON_1}}; паспорт {{PASSPORT_RF_1}}; код подразделения {{DIVISION_CODE_1}}.",
+      "actual_mask": "Анкета: {{PERSON_1}}; паспорт {{PASSPORT_RF_1}}; код подразделения {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0263",
+      "counts": {
+        "true_positive": 7,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Отправить договор на {{EMAIL_1}}, адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, кв {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Отправить договор на {{EMAIL_1}}, адрес регистрации: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, кв {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0264",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Карта {{BANK_CARD_1}}, CVV {{CVV_1}}, держатель {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Карта {{BANK_CARD_1}}, CVV {{CVV_1}}, держатель {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0265",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "PAN={{BANK_CARD_1}}; PIN={{PIN_1}}; mobile={{PHONE_RF_1}}",
+      "actual_mask": "PAN={{BANK_CARD_1}}; PIN={{PIN_1}}; mobile={{PHONE_RF_1}}",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0266",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "{{PERSON_1}} родился в месте: {{PLACE_OF_BIRTH_1}}; гражданство: {{CITIZENSHIP_1}}.",
+      "actual_mask": "{{PERSON_1}} родился в месте: {{PLACE_OF_BIRTH_1}}; гражданство: {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0267",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ВУ {{DRIVER_LICENSE_RF_1}} принадлежит клиенту {{PERSON_1}}, ИНН {{INN_1}}.",
+      "actual_mask": "ВУ {{DRIVER_LICENSE_RF_1}} принадлежит клиенту {{PERSON_1}}, ИНН {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0268",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт {{PASSPORT_RF_1}} выдан {{PASSPORT_ISSUER_1}} {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Паспорт {{PASSPORT_RF_1}} выдан {{PASSPORT_ISSUER_1}} {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0269",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Получатель {{PERSON_1}}; email {{EMAIL_1}}; тел. {{PHONE_RF_1}}.",
+      "actual_mask": "Получатель {{PERSON_1}}; email {{EMAIL_1}}; тел. {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0270",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Регистрация: страна {{ADDRESS_COUNTRY_1}}, индекс {{ADDRESS_POSTAL_CODE_1}}, город {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Регистрация: страна {{ADDRESS_COUNTRY_1}}, индекс {{ADDRESS_POSTAL_CODE_1}}, город {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0271",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО={{PERSON_1}}; email={{EMAIL_1}}; inn={{INN_1}}",
+      "actual_mask": "ФИО={{PERSON_1}}; email={{EMAIL_1}}; inn={{INN_1}}",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0272",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Заявитель {{PERSON_1}} сообщил карту {{BANK_CARD_1}} и код с оборота {{CVV_1}}.",
+      "actual_mask": "Заявитель {{PERSON_1}} сообщил карту {{BANK_CARD_1}} и код с оборота {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0273",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Дата рождения {{BIRTH_DATE_1}}; паспорт выдан {{PASSPORT_ISSUE_DATE_1}}; орган: {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Дата рождения {{BIRTH_DATE_1}}; паспорт выдан {{PASSPORT_ISSUE_DATE_1}}; орган: {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0274",
+      "counts": {
+        "true_positive": 8,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Контакт {{PHONE_RF_1}}, почта {{EMAIL_1}}, проживание: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Контакт {{PHONE_RF_1}}, почта {{EMAIL_1}}, проживание: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0275",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "card=pan:{{BANK_CARD_1}},pin:{{PIN_1}},holder:{{CARDHOLDER_NAME_1}}",
+      "actual_mask": "card=pan:{{BANK_CARD_1}},pin:{{PIN_1}},holder:{{CARDHOLDER_NAME_1}}",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0276",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО {{PERSON_1}}; место рождения {{PLACE_OF_BIRTH_1}}; ВУ {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "ФИО {{PERSON_1}}; место рождения {{PLACE_OF_BIRTH_1}}; ВУ {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0277",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Документ {{PASSPORT_RF_1}}, дата выдачи {{PASSPORT_ISSUE_DATE_1}}, код {{DIVISION_CODE_1}}.",
+      "actual_mask": "Документ {{PASSPORT_RF_1}}, дата выдачи {{PASSPORT_ISSUE_DATE_1}}, код {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0278",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Налогоплательщик {{PERSON_1}}: ИНН {{INN_1}}, гражданство {{CITIZENSHIP_1}}.",
+      "actual_mask": "Налогоплательщик {{PERSON_1}}: ИНН {{INN_1}}, гражданство {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0279",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Получатель карты {{CARDHOLDER_NAME_1}}; номер {{BANK_CARD_1}}; CVV {{CVV_1}}; PIN {{PIN_1}}.",
+      "actual_mask": "Получатель карты {{CARDHOLDER_NAME_1}}; номер {{BANK_CARD_1}}; CVV {{CVV_1}}; PIN {{PIN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v17-0280",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес: {{ADDRESS_POSTAL_CODE_1}}, {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, д. {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}; телефон {{PHONE_RF_1}}.",
+      "actual_mask": "Адрес: {{ADDRESS_POSTAL_CODE_1}}, {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, д. {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}; телефон {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    }
+  ]
+}

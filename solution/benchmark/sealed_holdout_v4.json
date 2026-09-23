@@ -1,0 +1,292 @@
+{
+  "name": "ru_pii_sealed_holdout_v4",
+  "version": 4,
+  "sources": [
+    "../../database/chunks/CH-SRC-001-05.md",
+    "../../database/chunks/CH-SRC-001-06.md",
+    "../../database/chunks/CH-SRC-001-07.md"
+  ],
+  "annotation": "Sealed evaluation set. Gold entities are exact, non-overlapping substrings; occurrence is zero-based. Do not use this set for detector tuning.",
+  "cases": [
+    {
+      "id": "sealed-form-person-01",
+      "text": "Фамилия, имя, отчество: Романова Елена Викторовна.",
+      "entities": [{"type": "PERSON", "value": "Романова Елена Викторовна"}]
+    },
+    {
+      "id": "sealed-prose-person-02",
+      "text": "Согласие получено от Николая Андреевича Воронцова.",
+      "entities": [{"type": "PERSON", "value": "Николая Андреевича Воронцова"}]
+    },
+    {
+      "id": "sealed-form-person-03",
+      "text": "ФИО клиента — АЛЕКСЕЕВА ОЛЬГА РОМАНОВНА.",
+      "entities": [{"type": "PERSON", "value": "АЛЕКСЕЕВА ОЛЬГА РОМАНОВНА"}]
+    },
+    {
+      "id": "sealed-prose-person-04",
+      "text": "Заявку подала Жанна-Мария Павловна Громова, действующая лично.",
+      "entities": [{"type": "PERSON", "value": "Жанна-Мария Павловна Громова"}]
+    },
+    {
+      "id": "sealed-form-email-01",
+      "text": "Персональный e-mail заявителя: marina.v+claim@inbox.example.",
+      "entities": [{"type": "EMAIL", "value": "marina.v+claim@inbox.example"}]
+    },
+    {
+      "id": "sealed-prose-email-02",
+      "text": "Ответ прошу направить мне на адрес <Dmitry-K@Example.INFO>.",
+      "entities": [{"type": "EMAIL", "value": "Dmitry-K@Example.INFO"}]
+    },
+    {
+      "id": "sealed-form-phone-01",
+      "text": "Личный мобильный: +7 926 408-19-37.",
+      "entities": [{"type": "PHONE_RF", "value": "+7 926 408-19-37"}]
+    },
+    {
+      "id": "sealed-prose-phone-02",
+      "text": "Со мной можно связаться по номеру 8(911)602-77-14 вечером.",
+      "entities": [{"type": "PHONE_RF", "value": "8(911)602-77-14"}]
+    },
+    {
+      "id": "sealed-form-inn-01",
+      "text": "ИНН налогоплательщика-физлица — 500100732259.",
+      "entities": [{"type": "INN", "value": "500100732259"}]
+    },
+    {
+      "id": "sealed-prose-inn-02",
+      "text": "В заявлении гражданин указал свой ИНН 7707083893.",
+      "entities": [{"type": "INN", "value": "7707083893"}]
+    },
+    {
+      "id": "sealed-form-card-01",
+      "text": "Карта плательщика №5555-5555-5555-4444.",
+      "entities": [{"type": "BANK_CARD", "value": "5555-5555-5555-4444"}]
+    },
+    {
+      "id": "sealed-prose-card-02",
+      "text": "Возврат следует выполнить на мою карту 4111111111111111.",
+      "entities": [{"type": "BANK_CARD", "value": "4111111111111111"}]
+    },
+    {
+      "id": "sealed-form-passport-01",
+      "text": "Паспорт гражданина РФ — 46 09 718245.",
+      "entities": [{"type": "PASSPORT_RF", "value": "46 09 718245"}]
+    },
+    {
+      "id": "sealed-form-passport-02",
+      "text": "Паспорт: серия 4013; номер 908172.",
+      "entities": [{"type": "PASSPORT_RF", "value": "серия 4013; номер 908172"}]
+    },
+    {
+      "id": "sealed-form-division-01",
+      "text": "Код выдавшего подразделения: 540-018.",
+      "entities": [{"type": "DIVISION_CODE", "value": "540-018"}]
+    },
+    {
+      "id": "sealed-form-birth-01",
+      "text": "Число, месяц и год рождения: 16.10.1983.",
+      "entities": [{"type": "BIRTH_DATE", "value": "16.10.1983"}]
+    },
+    {
+      "id": "sealed-prose-birth-02",
+      "text": "Застрахованная родилась двадцать второго июня 1995 года.",
+      "entities": [{"type": "BIRTH_DATE", "value": "двадцать второго июня 1995 года"}]
+    },
+    {
+      "id": "sealed-form-birth-03",
+      "text": "DOB / дата рождения: 1990-01-28.",
+      "entities": [{"type": "BIRTH_DATE", "value": "1990-01-28"}]
+    },
+    {
+      "id": "sealed-form-birthplace-01",
+      "text": "Место рождения: гор. Владивосток, Приморский край.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "гор. Владивосток, Приморский край"}]
+    },
+    {
+      "id": "sealed-prose-birthplace-02",
+      "text": "В анкете он написал, что родился в посёлке Лесной Кировской области.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "посёлке Лесной Кировской области"}]
+    },
+    {
+      "id": "sealed-form-citizenship-01",
+      "text": "Подданство / гражданство: Российская Федерация.",
+      "entities": [{"type": "CITIZENSHIP", "value": "Российская Федерация"}]
+    },
+    {
+      "id": "sealed-prose-citizenship-02",
+      "text": "Заявитель является гражданином Республики Казахстан.",
+      "entities": [{"type": "CITIZENSHIP", "value": "Республики Казахстан"}]
+    },
+    {
+      "id": "sealed-form-issuer-01",
+      "text": "Орган, выдавший паспорт: УМВД России по Калужской области.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "УМВД России по Калужской области"}]
+    },
+    {
+      "id": "sealed-prose-issuer-02",
+      "text": "Удостоверение личности было выдано ОТДЕЛОМ МВД РОССИИ ПО Г. ВОЛОГДЕ.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "ОТДЕЛОМ МВД РОССИИ ПО Г. ВОЛОГДЕ"}]
+    },
+    {
+      "id": "sealed-form-issue-date-01",
+      "text": "Когда выдан паспорт: 19.07.2017.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "19.07.2017"}]
+    },
+    {
+      "id": "sealed-prose-issue-date-02",
+      "text": "Документ оформили и выдали ему 8 ноября 2021 г.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "8 ноября 2021 г."}]
+    },
+    {
+      "id": "sealed-form-license-01",
+      "text": "Водительские права: 99 07 314159.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "99 07 314159"}]
+    },
+    {
+      "id": "sealed-prose-license-02",
+      "text": "Для аренды машины предъявлено ВУ № 7812 271828.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "7812 271828"}]
+    },
+    {
+      "id": "sealed-form-address-01",
+      "text": "Адрес физлица: Россия, 344000, город Ростов-на-Дону, улица Пушкинская, дом 64, квартира 31.",
+      "entities": [{"type": "ADDRESS_COUNTRY", "value": "Россия"}, {"type": "ADDRESS_POSTAL_CODE", "value": "344000"}, {"type": "ADDRESS_CITY", "value": "Ростов-на-Дону"}, {"type": "ADDRESS_STREET", "value": "Пушкинская"}, {"type": "ADDRESS_HOUSE", "value": "64"}, {"type": "ADDRESS_APARTMENT", "value": "31"}]
+    },
+    {
+      "id": "sealed-form-address-02",
+      "text": "Место регистрации заявителя: 630099, г. Новосибирск, Красный проспект, д. 20А, кв. 105.",
+      "entities": [{"type": "ADDRESS_POSTAL_CODE", "value": "630099"}, {"type": "ADDRESS_CITY", "value": "Новосибирск"}, {"type": "ADDRESS_STREET", "value": "Красный"}, {"type": "ADDRESS_HOUSE", "value": "20А"}, {"type": "ADDRESS_APARTMENT", "value": "105"}]
+    },
+    {
+      "id": "sealed-prose-address-03",
+      "text": "Я живу в городе Уфе на улице Менделеева, дом 137, квартира 8.",
+      "entities": [{"type": "ADDRESS_CITY", "value": "Уфе"}, {"type": "ADDRESS_STREET", "value": "Менделеева"}, {"type": "ADDRESS_HOUSE", "value": "137"}, {"type": "ADDRESS_APARTMENT", "value": "8"}]
+    },
+    {
+      "id": "sealed-form-cvv-01",
+      "text": "Код безопасности карты (CVC2): 731.",
+      "entities": [{"type": "CVV", "value": "731"}]
+    },
+    {
+      "id": "sealed-prose-pin-01",
+      "text": "Владелец сообщил персональный PIN=8520, что делать запрещено.",
+      "entities": [{"type": "PIN", "value": "8520"}]
+    },
+    {
+      "id": "sealed-form-cardholder-01",
+      "text": "CARD HOLDER: EKATERINA MOROZOVA.",
+      "entities": [{"type": "CARDHOLDER_NAME", "value": "EKATERINA MOROZOVA"}]
+    },
+    {
+      "id": "sealed-multi-contact-01",
+      "text": "Анкета: Павел Олегович Демин; телефон +7(985)321-09-87; почта p.demin@personal.example.",
+      "entities": [{"type": "PERSON", "value": "Павел Олегович Демин"}, {"type": "PHONE_RF", "value": "+7(985)321-09-87"}, {"type": "EMAIL", "value": "p.demin@personal.example"}]
+    },
+    {
+      "id": "sealed-multi-document-02",
+      "text": "Личное дело: паспорт 53 16 246810, код 530-006, выдан УМВД России по Новгородской области 11.12.2020.",
+      "entities": [{"type": "PASSPORT_RF", "value": "53 16 246810"}, {"type": "DIVISION_CODE", "value": "530-006"}, {"type": "PASSPORT_ISSUER", "value": "УМВД России по Новгородской области"}, {"type": "PASSPORT_ISSUE_DATE", "value": "11.12.2020"}]
+    },
+    {
+      "id": "sealed-multi-payment-03",
+      "text": "Платёжные сведения клиента: 5555 5555 5555 4444; CVC 416; владелец ANDREY BELOV.",
+      "entities": [{"type": "BANK_CARD", "value": "5555 5555 5555 4444"}, {"type": "CVV", "value": "416"}, {"type": "CARDHOLDER_NAME", "value": "ANDREY BELOV"}]
+    },
+    {
+      "id": "sealed-multi-biography-04",
+      "text": "Смирнова Инна Львовна родилась 02.09.1976 в городе Курске, гражданство — РФ.",
+      "entities": [{"type": "PERSON", "value": "Смирнова Инна Львовна"}, {"type": "BIRTH_DATE", "value": "02.09.1976"}, {"type": "PLACE_OF_BIRTH", "value": "городе Курске"}, {"type": "CITIZENSHIP", "value": "РФ"}]
+    },
+    {
+      "id": "sealed-multi-repeated-05",
+      "text": "Личная почта irina@home.example совпадает с подтверждением irina@home.example.",
+      "entities": [{"type": "EMAIL", "value": "irina@home.example", "occurrence": 0}, {"type": "EMAIL", "value": "irina@home.example", "occurrence": 1}]
+    },
+    {
+      "id": "sealed-multi-loose-prose-06",
+      "text": "Прошу обновить мои данные: меня зовут Фёдор Алексеевич Никитин, мой новый номер 8 927 300 41 52 и email f.nikitin@home.example.",
+      "entities": [{"type": "PERSON", "value": "Фёдор Алексеевич Никитин"}, {"type": "PHONE_RF", "value": "8 927 300 41 52"}, {"type": "EMAIL", "value": "f.nikitin@home.example"}]
+    },
+    {
+      "id": "sealed-negative-literature-01",
+      "text": "На семинаре сравнивали рассказы Антона Чехова и Ивана Бунина.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-public-person-02",
+      "text": "Доклад посвящён научным трудам Дмитрия Менделеева.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-hotline-03",
+      "text": "Общероссийская линия консультаций: 8 800 700-40-50.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-reception-04",
+      "text": "Городская приёмная отвечает по телефону +7 (343) 222-11-00.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-mailbox-05",
+      "text": "Для закупок опубликован общий ящик tender@company.example.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-mailbox-06",
+      "text": "Редакционные запросы принимает newsdesk@media.example.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-office-07",
+      "text": "Главный офис организации открыт по адресу: Казань, улица Баумана, дом 15.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-event-date-08",
+      "text": "Выставка открылась 16.10.1983 и завершилась 28 января 1990 года.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-invalid-calendar-09",
+      "text": "В демонстрационной форме специально стоят даты 31.11.2024 и 30.02.2020.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-invalid-checksum-10",
+      "text": "Контроль должен отклонить ИНН 7707083894 и карту 4111111111111112.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-inventory-11",
+      "text": "Инвентарный номер оборудования: 46 09 718245.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-logistics-12",
+      "text": "Маршрут контейнера имеет внутренний код 540-018.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-geography-13",
+      "text": "Новосибирск расположен в России, а Владивосток — у Японского моря.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-security-advice-14",
+      "text": "Сотрудники никогда не запрашивают паспорт, PIN или код CVC2 в чате.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-test-payment-15",
+      "text": "Учебная инструкция содержит публичный тестовый PAN 5555-5555-5555-4444.",
+      "entities": []
+    },
+    {
+      "id": "sealed-negative-catalog-16",
+      "text": "Модель устройства 4013-908172 доступна в синем цвете.",
+      "entities": []
+    }
+  ]
+}

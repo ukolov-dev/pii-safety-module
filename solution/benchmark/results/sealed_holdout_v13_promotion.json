@@ -1,0 +1,26 @@
+{
+  "dataset": "sealed_holdout_v13.json",
+  "baseline": "production_v3_13",
+  "candidate": "v3_20",
+  "baseline_metrics": {
+    "true_positive": 48,
+    "false_positive": 20,
+    "false_negative": 41,
+    "precision": 0.7058823529411765,
+    "recall": 0.5393258426966292,
+    "f1": 0.6114649681528662
+  },
+  "candidate_metrics": {
+    "true_positive": 59,
+    "false_positive": 16,
+    "false_negative": 30,
+    "precision": 0.7866666666666666,
+    "recall": 0.6629213483146067,
+    "f1": 0.7195121951219512,
+    "exact_masks": 87,
+    "cases": 120,
+    "exact_round_trip": 120
+  },
+  "f1_gain_percentage_points": 10.8047226969085,
+  "decision": "promoted"
+}

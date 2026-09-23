@@ -1,0 +1,272 @@
+{
+  "quality_dataset.json": {
+    "production_v3_20": {
+      "true_positive": 31,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 31,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "adversarial_dataset.json": {
+    "production_v3_20": {
+      "true_positive": 27,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 27,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "blind_holdout_v3.json": {
+    "production_v3_20": {
+      "true_positive": 63,
+      "false_positive": 1,
+      "false_negative": 2,
+      "precision": 0.984375,
+      "recall": 0.9692307692307692,
+      "f1": 0.9767441860465116
+    },
+    "candidate_v3_24": {
+      "true_positive": 63,
+      "false_positive": 1,
+      "false_negative": 2,
+      "precision": 0.984375,
+      "recall": 0.9692307692307692,
+      "f1": 0.9767441860465116
+    }
+  },
+  "false_positive_stress_v3.json": {
+    "production_v3_20": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v4.json": {
+    "production_v3_20": {
+      "true_positive": 65,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 65,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v5.json": {
+    "production_v3_20": {
+      "true_positive": 75,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9868421052631579,
+      "f1": 0.9933774834437086
+    },
+    "candidate_v3_24": {
+      "true_positive": 75,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9868421052631579,
+      "f1": 0.9933774834437086
+    }
+  },
+  "sealed_holdout_v6.json": {
+    "production_v3_20": {
+      "true_positive": 87,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9886363636363636,
+      "f1": 0.9942857142857143
+    },
+    "candidate_v3_24": {
+      "true_positive": 87,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9886363636363636,
+      "f1": 0.9942857142857143
+    }
+  },
+  "sealed_holdout_v7.json": {
+    "production_v3_20": {
+      "true_positive": 84,
+      "false_positive": 0,
+      "false_negative": 2,
+      "precision": 1.0,
+      "recall": 0.9767441860465116,
+      "f1": 0.9882352941176471
+    },
+    "candidate_v3_24": {
+      "true_positive": 84,
+      "false_positive": 0,
+      "false_negative": 2,
+      "precision": 1.0,
+      "recall": 0.9767441860465116,
+      "f1": 0.9882352941176471
+    }
+  },
+  "sealed_holdout_v8.json": {
+    "production_v3_20": {
+      "true_positive": 85,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9883720930232558,
+      "f1": 0.9941520467836257
+    },
+    "candidate_v3_24": {
+      "true_positive": 85,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9883720930232558,
+      "f1": 0.9941520467836257
+    }
+  },
+  "sealed_holdout_v9.json": {
+    "production_v3_20": {
+      "true_positive": 95,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9895833333333334,
+      "f1": 0.9947643979057592
+    },
+    "candidate_v3_24": {
+      "true_positive": 95,
+      "false_positive": 0,
+      "false_negative": 1,
+      "precision": 1.0,
+      "recall": 0.9895833333333334,
+      "f1": 0.9947643979057592
+    }
+  },
+  "sealed_holdout_v10.json": {
+    "production_v3_20": {
+      "true_positive": 102,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 102,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v11.json": {
+    "production_v3_20": {
+      "true_positive": 102,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 102,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v12.json": {
+    "production_v3_20": {
+      "true_positive": 100,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "candidate_v3_24": {
+      "true_positive": 100,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v13.json": {
+    "production_v3_20": {
+      "true_positive": 59,
+      "false_positive": 16,
+      "false_negative": 30,
+      "precision": 0.7866666666666666,
+      "recall": 0.6629213483146067,
+      "f1": 0.7195121951219512
+    },
+    "candidate_v3_24": {
+      "true_positive": 89,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "sealed_holdout_v14.json": {
+    "production_v3_20": {
+      "true_positive": 88,
+      "false_positive": 21,
+      "false_negative": 45,
+      "precision": 0.8073394495412844,
+      "recall": 0.6616541353383458,
+      "f1": 0.7272727272727273
+    },
+    "candidate_v3_24": {
+      "true_positive": 133,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  }
+}

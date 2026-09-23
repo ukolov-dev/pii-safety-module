@@ -1,0 +1,31 @@
+# Project context router
+node_modules/
+.project-context/indexes/
+.project-context/drafts/
+.project-context/trash/
+.project-context/active/**/.execution.lock
+.project-context/active/**/.*.tmp
+
+# Local environments and generated files
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+solution/solution-submission-*.zip
+
+# Runtime secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log

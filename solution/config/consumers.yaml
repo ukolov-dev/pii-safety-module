@@ -1,0 +1,17 @@
+consumers:
+  default:
+    enabled: true
+    mask_types:
+      - PERSON
+      - EMAIL
+      - PHONE_RF
+      - INN
+      - BANK_CARD
+      - PASSPORT_RF
+      - BIRTH_DATE
+      - DIVISION_CODE
+      - CVV
+      - PIN
+    demask_enabled: true
+    vault_ttl_seconds: 900
+

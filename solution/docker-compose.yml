@@ -1,0 +1,138 @@
+x-api: &api
+  build: .
+  environment:
+    REDIS_URL: redis://redis:6379/0
+    MAPPING_ENCRYPTION_KEY_FILE: /run/pii-secrets/mapping.key
+    MAPPING_TTL_SECONDS: "900"
+    MAX_REQUEST_BODY_BYTES: "8388608"
+    LOG_LEVEL: INFO
+  depends_on:
+    key-init:
+      condition: service_completed_successfully
+    redis:
+      condition: service_healthy
+  networks:
+    - edge
+    - vault
+  volumes:
+    - mapping-key:/run/pii-secrets:ro
+  read_only: true
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=64m
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  pids_limit: 256
+  mem_limit: 1g
+  cpus: "2.0"
+  restart: unless-stopped
+  stop_grace_period: 10s
+  healthcheck:
+    test:
+      - CMD
+      - python
+      - -c
+      - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health/ready', timeout=2)"
+    interval: 5s
+    timeout: 3s
+    retries: 12
+    start_period: 10s
+
+services:
+  proxy:
+    image: nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+    user: "101:101"
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      api1:
+        condition: service_healthy
+      api2:
+        condition: service_healthy
+    networks:
+      - edge
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/nginx.conf:ro
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=32m
+      - /var/cache/nginx:rw,noexec,nosuid,size=16m
+      - /var/run:rw,noexec,nosuid,size=1m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128
+    mem_limit: 128m
+    cpus: "1.0"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1:8080/health/ready"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  api1:
+    <<: *api
+
+  api2:
+    <<: *api
+
+  key-init:
+    build: .
+    command: ["python", "-m", "app.key_init"]
+    environment:
+      MAPPING_ENCRYPTION_KEY_FILE: /run/pii-secrets/mapping.key
+    network_mode: none
+    volumes:
+      - mapping-key:/run/pii-secrets
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 32
+    mem_limit: 64m
+    cpus: "0.25"
+    restart: "no"
+
+  redis:
+    image: redis:7-alpine@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499
+    user: "999:1000"
+    command:
+      - redis-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+      - --maxmemory
+      - 192mb
+      - --maxmemory-policy
+      - volatile-ttl
+    networks:
+      - vault
+    read_only: true
+    tmpfs:
+      - /data:rw,noexec,nosuid,size=224m,uid=999,gid=1000,mode=0700
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128
+    mem_limit: 256m
+    cpus: "1.0"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+
+networks:
+  edge: {}
+  vault:
+    internal: true
+
+volumes:
+  mapping-key:

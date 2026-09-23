@@ -1,0 +1,372 @@
+{
+  "name": "ru_pii_blind_holdout_v3",
+  "version": 3,
+  "sources": [
+    "../../database/chunks/CH-SRC-001-05.md",
+    "../../database/chunks/CH-SRC-001-06.md",
+    "../../database/chunks/CH-SRC-001-07.md"
+  ],
+  "annotation": "Независимый holdout: точные непересекающиеся подстроки; occurrence начинается с нуля. Набор не используется для настройки детектора.",
+  "cases": [
+    {
+      "id": "blind-person-dative-label",
+      "dimensions": ["label", "case"],
+      "text": "Доверенность оформлена на имя Сергея Александровича Орлова.",
+      "entities": [{"type": "PERSON", "value": "Сергея Александровича Орлова"}]
+    },
+    {
+      "id": "blind-person-surname-first",
+      "dimensions": ["label", "punctuation"],
+      "text": "Ф.И.О.: Кузнецова Мария Игоревна; статус — подтверждён.",
+      "entities": [{"type": "PERSON", "value": "Кузнецова Мария Игоревна"}]
+    },
+    {
+      "id": "blind-person-mixed-case",
+      "dimensions": ["mixed_case", "label"],
+      "text": "Получатель — иВАН пЕТРОВИЧ сМИРНОВ.",
+      "entities": [{"type": "PERSON", "value": "иВАН пЕТРОВИЧ сМИРНОВ"}]
+    },
+    {
+      "id": "blind-person-hyphen",
+      "dimensions": ["format", "case"],
+      "text": "Заявление от Анны-Марии Олеговны Лебедевой принято.",
+      "entities": [{"type": "PERSON", "value": "Анны-Марии Олеговны Лебедевой"}]
+    },
+    {
+      "id": "blind-email-angle-brackets",
+      "dimensions": ["punctuation", "mixed_case"],
+      "text": "Личная почта: <Elena.Sidorova+docs@Mail.Example.RU>.",
+      "entities": [{"type": "EMAIL", "value": "Elena.Sidorova+docs@Mail.Example.RU"}]
+    },
+    {
+      "id": "blind-email-short-label",
+      "dimensions": ["label", "punctuation"],
+      "text": "e-mail=petrov_1991@example.net; использовать для ответа.",
+      "entities": [{"type": "EMAIL", "value": "petrov_1991@example.net"}]
+    },
+    {
+      "id": "blind-email-cyrillic-context",
+      "dimensions": ["label", "format"],
+      "text": "Адрес электронной почты заявителя — oleg-k@example.travel.",
+      "entities": [{"type": "EMAIL", "value": "oleg-k@example.travel"}]
+    },
+    {
+      "id": "blind-phone-parentheses",
+      "dimensions": ["format", "punctuation"],
+      "text": "Моб. тел.: +7(921)555-04-03, звонить после 18:00.",
+      "entities": [{"type": "PHONE_RF", "value": "+7(921)555-04-03"}]
+    },
+    {
+      "id": "blind-phone-dashes",
+      "dimensions": ["format", "label"],
+      "text": "Контактный номер гражданина — 8-916-234-56-78.",
+      "entities": [{"type": "PHONE_RF", "value": "8-916-234-56-78"}]
+    },
+    {
+      "id": "blind-phone-spaced",
+      "dimensions": ["format", "label"],
+      "text": "Для связи с клиентом: +7 812 444 33 22.",
+      "entities": [{"type": "PHONE_RF", "value": "+7 812 444 33 22"}]
+    },
+    {
+      "id": "blind-inn-person",
+      "dimensions": ["label", "punctuation"],
+      "text": "Идентификатор налогоплательщика (ИНН): 500100732259.",
+      "entities": [{"type": "INN", "value": "500100732259"}]
+    },
+    {
+      "id": "blind-inn-inline",
+      "dimensions": ["format", "multiple"],
+      "text": "Физлицо с ИНН 7707083893 и почтой tax.person@example.com подало форму.",
+      "entities": [{"type": "INN", "value": "7707083893"}, {"type": "EMAIL", "value": "tax.person@example.com"}]
+    },
+    {
+      "id": "blind-card-contiguous",
+      "dimensions": ["format", "label"],
+      "text": "Номер банковской карты клиента: 5555555555554444.",
+      "entities": [{"type": "BANK_CARD", "value": "5555555555554444"}]
+    },
+    {
+      "id": "blind-card-dashes",
+      "dimensions": ["format", "punctuation"],
+      "text": "Оплата с карты № 4111-1111-1111-1111 разрешена владельцем.",
+      "entities": [{"type": "BANK_CARD", "value": "4111-1111-1111-1111"}]
+    },
+    {
+      "id": "blind-passport-abbreviation",
+      "dimensions": ["label", "format"],
+      "text": "Паспорт РФ: 40 12 654321; копия приложена.",
+      "entities": [{"type": "PASSPORT_RF", "value": "40 12 654321"}]
+    },
+    {
+      "id": "blind-passport-words",
+      "dimensions": ["label", "punctuation"],
+      "text": "Документ: серия 4510 / номер 987654.",
+      "entities": [{"type": "PASSPORT_RF", "value": "серия 4510 / номер 987654"}]
+    },
+    {
+      "id": "blind-passport-nospace",
+      "dimensions": ["format", "label"],
+      "text": "Паспортные данные заявителя 4510987654 проверены.",
+      "entities": [{"type": "PASSPORT_RF", "value": "4510987654"}]
+    },
+    {
+      "id": "blind-division-slash",
+      "dimensions": ["format", "label"],
+      "text": "Код подразделения МВД: 780/015.",
+      "entities": [{"type": "DIVISION_CODE", "value": "780/015"}]
+    },
+    {
+      "id": "blind-division-hyphen",
+      "dimensions": ["format", "punctuation"],
+      "text": "К/п 770-123 указан рядом с паспортом.",
+      "entities": [{"type": "DIVISION_CODE", "value": "770-123"}]
+    },
+    {
+      "id": "blind-birth-date-slashes",
+      "dimensions": ["format", "label"],
+      "text": "Дата рождения гражданина: 07/11/1984.",
+      "entities": [{"type": "BIRTH_DATE", "value": "07/11/1984"}]
+    },
+    {
+      "id": "blind-birth-date-iso",
+      "dimensions": ["format", "label"],
+      "text": "Рождён: 1992-08-17, место рождения указано ниже.",
+      "entities": [{"type": "BIRTH_DATE", "value": "1992-08-17"}]
+    },
+    {
+      "id": "blind-birth-date-text-case",
+      "dimensions": ["case", "format"],
+      "text": "Днём рождения Натальи является 21 февраля 1979 г.",
+      "entities": [{"type": "BIRTH_DATE", "value": "21 февраля 1979 г."}]
+    },
+    {
+      "id": "blind-place-village",
+      "dimensions": ["label", "format"],
+      "text": "Место рождения — село Большое Болдино Нижегородской области.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "село Большое Болдино Нижегородской области"}]
+    },
+    {
+      "id": "blind-place-city-abbrev",
+      "dimensions": ["punctuation", "label"],
+      "text": "Родился в: г. Ростов-на-Дону.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "г. Ростов-на-Дону"}]
+    },
+    {
+      "id": "blind-citizenship-short",
+      "dimensions": ["label", "format"],
+      "text": "Гражданство заявителя — РФ.",
+      "entities": [{"type": "CITIZENSHIP", "value": "РФ"}]
+    },
+    {
+      "id": "blind-citizenship-foreign",
+      "dimensions": ["label", "case"],
+      "text": "Гражданином Республики Беларусь является с рождения.",
+      "entities": [{"type": "CITIZENSHIP", "value": "Республики Беларусь"}]
+    },
+    {
+      "id": "blind-issuer-mvd",
+      "dimensions": ["label", "format"],
+      "text": "Кем выдан: ГУ МВД России по Московской области.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "ГУ МВД России по Московской области"}]
+    },
+    {
+      "id": "blind-issuer-ovd",
+      "dimensions": ["label", "case"],
+      "text": "Документ выдан отделом внутренних дел Центрального района г. Тулы.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "отделом внутренних дел Центрального района г. Тулы"}]
+    },
+    {
+      "id": "blind-issue-date-slash",
+      "dimensions": ["format", "label"],
+      "text": "Паспорт выдан 14/09/2016; срок действия не указан.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "14/09/2016"}]
+    },
+    {
+      "id": "blind-issue-date-text",
+      "dimensions": ["format", "label"],
+      "text": "Дата выдачи документа — 3 марта 2020 года.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "3 марта 2020 года"}]
+    },
+    {
+      "id": "blind-driver-hyphen",
+      "dimensions": ["format", "label"],
+      "text": "В/у водителя: 77-15-445566.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "77-15-445566"}]
+    },
+    {
+      "id": "blind-driver-series-number",
+      "dimensions": ["label", "punctuation"],
+      "text": "Удостоверение водителя, серия 50 20 № 112233.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "50 20 № 112233"}]
+    },
+    {
+      "id": "blind-address-one-line-abbrev",
+      "dimensions": ["address_one_line", "punctuation", "multiple"],
+      "text": "Адрес проживания: 620014, г. Екатеринбург, ул. Малышева, д. 18, кв. 42.",
+      "entities": [{"type": "ADDRESS_POSTAL_CODE", "value": "620014"}, {"type": "ADDRESS_CITY", "value": "Екатеринбург"}, {"type": "ADDRESS_STREET", "value": "Малышева"}, {"type": "ADDRESS_HOUSE", "value": "18"}, {"type": "ADDRESS_APARTMENT", "value": "42"}]
+    },
+    {
+      "id": "blind-address-one-line-full",
+      "dimensions": ["address_one_line", "multiple"],
+      "text": "Место жительства: Россия, 443100, город Самара, проспект Ленина, дом 25Б, квартира 9.",
+      "entities": [{"type": "ADDRESS_COUNTRY", "value": "Россия"}, {"type": "ADDRESS_POSTAL_CODE", "value": "443100"}, {"type": "ADDRESS_CITY", "value": "Самара"}, {"type": "ADDRESS_STREET", "value": "Ленина"}, {"type": "ADDRESS_HOUSE", "value": "25Б"}, {"type": "ADDRESS_APARTMENT", "value": "9"}]
+    },
+    {
+      "id": "blind-address-building",
+      "dimensions": ["address_one_line", "format", "multiple"],
+      "text": "Регистрация: г. Пермь, шоссе Космонавтов, д. 111, корп. 2, кв. 16.",
+      "entities": [{"type": "ADDRESS_CITY", "value": "Пермь"}, {"type": "ADDRESS_STREET", "value": "Космонавтов"}, {"type": "ADDRESS_HOUSE", "value": "111"}, {"type": "ADDRESS_APARTMENT", "value": "16"}]
+    },
+    {
+      "id": "blind-card-cvv-combined",
+      "dimensions": ["multiple", "punctuation"],
+      "text": "Карта 4111 1111 1111 1111, CVV: 908, держатель: PETR SOKOLOV.",
+      "entities": [{"type": "BANK_CARD", "value": "4111 1111 1111 1111"}, {"type": "CVV", "value": "908"}, {"type": "CARDHOLDER_NAME", "value": "PETR SOKOLOV"}]
+    },
+    {
+      "id": "blind-pin-context",
+      "dimensions": ["label", "punctuation"],
+      "text": "Секретный ПИН-код — 6042; никому не сообщать.",
+      "entities": [{"type": "PIN", "value": "6042"}]
+    },
+    {
+      "id": "blind-cardholder-slash",
+      "dimensions": ["label", "format"],
+      "text": "Имя на карте: SOKOLOVA/ANNA.",
+      "entities": [{"type": "CARDHOLDER_NAME", "value": "SOKOLOVA/ANNA"}]
+    },
+    {
+      "id": "blind-multi-profile",
+      "dimensions": ["multiple", "punctuation"],
+      "text": "Клиент Петров Артём Сергеевич; дата рождения 09.04.1988; тел. +7 (903) 111-22-33; email artem.p@example.ru.",
+      "entities": [{"type": "PERSON", "value": "Петров Артём Сергеевич"}, {"type": "BIRTH_DATE", "value": "09.04.1988"}, {"type": "PHONE_RF", "value": "+7 (903) 111-22-33"}, {"type": "EMAIL", "value": "artem.p@example.ru"}]
+    },
+    {
+      "id": "blind-multi-passport",
+      "dimensions": ["multiple", "label"],
+      "text": "Паспорт 45 14 321654, выдан ГУ МВД России по г. Москве 22.06.2019, код подразделения 770-099.",
+      "entities": [{"type": "PASSPORT_RF", "value": "45 14 321654"}, {"type": "PASSPORT_ISSUER", "value": "ГУ МВД России по г. Москве"}, {"type": "PASSPORT_ISSUE_DATE", "value": "22.06.2019"}, {"type": "DIVISION_CODE", "value": "770-099"}]
+    },
+    {
+      "id": "blind-repeated-email",
+      "dimensions": ["multiple", "repeat"],
+      "text": "Личный email vera@example.org; подтвердите адрес vera@example.org повторно.",
+      "entities": [{"type": "EMAIL", "value": "vera@example.org", "occurrence": 0}, {"type": "EMAIL", "value": "vera@example.org", "occurrence": 1}]
+    },
+    {
+      "id": "blind-repeated-phone",
+      "dimensions": ["multiple", "repeat"],
+      "text": "Номер клиента 8 905 777 66 55, резервная запись: 8 905 777 66 55.",
+      "entities": [{"type": "PHONE_RF", "value": "8 905 777 66 55", "occurrence": 0}, {"type": "PHONE_RF", "value": "8 905 777 66 55", "occurrence": 1}]
+    },
+    {
+      "id": "blind-negative-famous-people",
+      "dimensions": ["negative", "person"],
+      "text": "В музее обсуждали полотна Ильи Репина и биографию Ивана Шишкина.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-fiction-character",
+      "dimensions": ["negative", "person"],
+      "text": "Анна Каренина — центральная героиня романа Льва Толстого.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-corporate-phone",
+      "dimensions": ["negative", "corporate_contact"],
+      "text": "Телефон приёмной компании: +7 (495) 000-10-20.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-hotline",
+      "dimensions": ["negative", "public_contact"],
+      "text": "Единая бесплатная горячая линия 8-800-200-00-00 работает круглосуточно.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-shared-sales-email",
+      "dimensions": ["negative", "corporate_contact"],
+      "text": "Коммерческие предложения направляйте на sales@example.ru.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-press-email",
+      "dimensions": ["negative", "public_contact"],
+      "text": "Контакты пресс-службы: press@city.example.org.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-office-address",
+      "dimensions": ["negative", "address_one_line"],
+      "text": "Наш офис: 190000, Санкт-Петербург, Невский проспект, дом 1.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-store-address",
+      "dimensions": ["negative", "address_one_line"],
+      "text": "Магазин расположен: г. Омск, ул. Ленина, д. 12.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-history-date",
+      "dimensions": ["negative", "date"],
+      "text": "Компания основана 12.03.1987 и открыла филиал 5 мая 1990 года.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-invalid-dates",
+      "dimensions": ["negative", "date"],
+      "text": "Ошибочные даты рождения: 31/04/2001, 29.02.2021 и 00.12.1990.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-order-passport-shape",
+      "dimensions": ["negative", "numbers"],
+      "text": "Артикул товара 45 12 654321 указан в накладной.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-warehouse-division-shape",
+      "dimensions": ["negative", "numbers"],
+      "text": "Ячейка склада 780-015 зарезервирована под заказ.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-invalid-inn",
+      "dimensions": ["negative", "checksum"],
+      "text": "Пример некорректного ИНН: 500100732250.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-invalid-card",
+      "dimensions": ["negative", "checksum"],
+      "text": "Учебный шаблон карты 5555 5555 5555 4445 не проходит проверку.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-geography",
+      "dimensions": ["negative", "geography"],
+      "text": "Екатеринбург находится в России, а Самара стоит на Волге.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-document-policy",
+      "dimensions": ["negative", "label"],
+      "text": "Не отправляйте паспорт, ИНН, ПИН-код или CVV по электронной почте.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-time-and-code",
+      "dimensions": ["negative", "numbers"],
+      "text": "Встреча назначена на 18:30, внутренний код переговорной — 6042.",
+      "entities": []
+    },
+    {
+      "id": "blind-negative-public-card-example",
+      "dimensions": ["negative", "public_example"],
+      "text": "В документации платёжного шлюза приведён тестовый номер 4111 1111 1111 1111.",
+      "entities": []
+    }
+  ]
+}

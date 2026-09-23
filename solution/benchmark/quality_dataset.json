@@ -1,0 +1,170 @@
+{
+  "name": "ru_pii_quality_v1",
+  "version": 1,
+  "sources": [
+    "../database/chunks/CH-SRC-001-05.md",
+    "../database/chunks/CH-SRC-001-06.md",
+    "../database/chunks/CH-SRC-001-07.md"
+  ],
+  "annotation": "Gold entities are exact, non-overlapping substrings. occurrence is zero-based.",
+  "cases": [
+    {
+      "id": "person-context",
+      "text": "Клиент: Иван Петрович Сидоров подписал заявление.",
+      "entities": [{"type": "PERSON", "value": "Иван Петрович Сидоров"}]
+    },
+    {
+      "id": "person-uppercase",
+      "text": "Получатель: ИВАН ПЕТРОВ.",
+      "entities": [{"type": "PERSON", "value": "ИВАН ПЕТРОВ"}]
+    },
+    {
+      "id": "email",
+      "text": "Электронная почта клиента: Ivan.Petrov+work@example.ru",
+      "entities": [{"type": "EMAIL", "value": "Ivan.Petrov+work@example.ru"}]
+    },
+    {
+      "id": "phone",
+      "text": "Телефон заявителя +7 (999) 123-45-67.",
+      "entities": [{"type": "PHONE_RF", "value": "+7 (999) 123-45-67"}]
+    },
+    {
+      "id": "inn",
+      "text": "ИНН клиента 7707083893 указан в анкете.",
+      "entities": [{"type": "INN", "value": "7707083893"}]
+    },
+    {
+      "id": "bank-card",
+      "text": "Карта клиента: 4111 1111 1111 1111.",
+      "entities": [{"type": "BANK_CARD", "value": "4111 1111 1111 1111"}]
+    },
+    {
+      "id": "passport-separated",
+      "text": "Паспорт клиента: 45 08 123456.",
+      "entities": [{"type": "PASSPORT_RF", "value": "45 08 123456"}]
+    },
+    {
+      "id": "passport-labelled",
+      "text": "Серия 4508, номер 123456 зарегистрированы.",
+      "entities": [{"type": "PASSPORT_RF", "value": "Серия 4508, номер 123456"}]
+    },
+    {
+      "id": "division-code",
+      "text": "Код подразделения: 770-001.",
+      "entities": [{"type": "DIVISION_CODE", "value": "770-001"}]
+    },
+    {
+      "id": "birth-date-numeric",
+      "text": "Дата рождения: 12.03.1987.",
+      "entities": [{"type": "BIRTH_DATE", "value": "12.03.1987"}]
+    },
+    {
+      "id": "birth-date-text",
+      "text": "Заявитель родился 5 мая 1990 года.",
+      "entities": [{"type": "BIRTH_DATE", "value": "5 мая 1990 года"}]
+    },
+    {
+      "id": "cvv",
+      "text": "CVV: 123.",
+      "entities": [{"type": "CVV", "value": "123"}]
+    },
+    {
+      "id": "pin",
+      "text": "ПИН-код: 4821.",
+      "entities": [{"type": "PIN", "value": "4821"}]
+    },
+    {
+      "id": "repeated-email",
+      "text": "Почта user@example.org, резервная почта user@example.org.",
+      "entities": [
+        {"type": "EMAIL", "value": "user@example.org", "occurrence": 0},
+        {"type": "EMAIL", "value": "user@example.org", "occurrence": 1}
+      ]
+    },
+    {
+      "id": "place-of-birth",
+      "text": "Место рождения: город Казань.",
+      "entities": [{"type": "PLACE_OF_BIRTH", "value": "город Казань"}]
+    },
+    {
+      "id": "citizenship",
+      "text": "Гражданство: Российская Федерация.",
+      "entities": [{"type": "CITIZENSHIP", "value": "Российская Федерация"}]
+    },
+    {
+      "id": "passport-issuer",
+      "text": "Паспорт выдан ОМВД России по району Арбат.",
+      "entities": [{"type": "PASSPORT_ISSUER", "value": "ОМВД России по району Арбат"}]
+    },
+    {
+      "id": "passport-issue-date",
+      "text": "Дата выдачи паспорта: 12.03.2018.",
+      "entities": [{"type": "PASSPORT_ISSUE_DATE", "value": "12.03.2018"}]
+    },
+    {
+      "id": "driver-license",
+      "text": "Водительское удостоверение: 77 11 123456.",
+      "entities": [{"type": "DRIVER_LICENSE_RF", "value": "77 11 123456"}]
+    },
+    {
+      "id": "address-country",
+      "text": "Страна проживания: Россия.",
+      "entities": [{"type": "ADDRESS_COUNTRY", "value": "Россия"}]
+    },
+    {
+      "id": "address-postal-code",
+      "text": "Почтовый индекс клиента: 101000.",
+      "entities": [{"type": "ADDRESS_POSTAL_CODE", "value": "101000"}]
+    },
+    {
+      "id": "address-city",
+      "text": "Город проживания: Москва.",
+      "entities": [{"type": "ADDRESS_CITY", "value": "Москва"}]
+    },
+    {
+      "id": "address-street",
+      "text": "Улица проживания: Тверская.",
+      "entities": [{"type": "ADDRESS_STREET", "value": "Тверская"}]
+    },
+    {
+      "id": "address-house",
+      "text": "Дом клиента: 12А.",
+      "entities": [{"type": "ADDRESS_HOUSE", "value": "12А"}]
+    },
+    {
+      "id": "address-apartment",
+      "text": "Квартира клиента: 45.",
+      "entities": [{"type": "ADDRESS_APARTMENT", "value": "45"}]
+    },
+    {
+      "id": "cardholder",
+      "text": "Имя держателя карты: IVAN PETROV.",
+      "entities": [{"type": "CARDHOLDER_NAME", "value": "IVAN PETROV"}]
+    },
+    {
+      "id": "combined-supported",
+      "text": "Клиент Иван Петров, телефон 8 999 123 45 67, email ivan@example.com, ИНН 7707083893.",
+      "entities": [
+        {"type": "PERSON", "value": "Иван Петров"},
+        {"type": "PHONE_RF", "value": "8 999 123 45 67"},
+        {"type": "EMAIL", "value": "ivan@example.com"},
+        {"type": "INN", "value": "7707083893"}
+      ]
+    },
+    {
+      "id": "negative-poet",
+      "text": "Сегодня мы читали стихи поэта Александра Пушкина.",
+      "entities": []
+    },
+    {
+      "id": "negative-bank-office-address",
+      "text": "Отделение банка находится по адресу: Москва, улица Тверская, дом 7.",
+      "entities": []
+    },
+    {
+      "id": "negative-invalid-numbers",
+      "text": "Неверные значения: ИНН 1234567890, карта 1111 1111 1111 1111, дата рождения 31.02.2020.",
+      "entities": []
+    }
+  ]
+}

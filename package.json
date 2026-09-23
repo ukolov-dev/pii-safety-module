@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "context:import": "node scripts/import-project-context.mjs",
+    "context:index": "project-context index",
+    "context:doctor": "project-context doctor --json"
+  },
+  "devDependencies": {
+    "mcp-project-context-router": "github:ukolov-dev/mcp-project-context-router"
+  }
+}

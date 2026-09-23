@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "python_version": "3.12.7",
+  "warmups": 1,
+  "cases": [
+    {
+      "target_tokens": 1000,
+      "actual_tokens": 1000,
+      "payload_utf8_bytes": 15748,
+      "masked_utf8_bytes": 15737,
+      "detected_entities": 3,
+      "mapping_entries": 3,
+      "iterations": 5,
+      "mask_ms_min": 55.379459,
+      "mask_ms_median": 55.629583,
+      "mask_ms_p95": 56.269917,
+      "mask_ms_max": 56.269917,
+      "unmask_ms_min": 0.008125,
+      "unmask_ms_median": 0.008916,
+      "unmask_ms_p95": 0.009125,
+      "unmask_ms_max": 0.009125,
+      "tracemalloc_peak_bytes": 56352,
+      "process_peak_rss_bytes": 25067520,
+      "exact_round_trip": true,
+      "pii_positions": {
+        "start": 0,
+        "middle": 500,
+        "end": 999
+      }
+    },
+    {
+      "target_tokens": 10000,
+      "actual_tokens": 10000,
+      "payload_utf8_bytes": 157500,
+      "masked_utf8_bytes": 157489,
+      "detected_entities": 3,
+      "mapping_entries": 3,
+      "iterations": 5,
+      "mask_ms_min": 190.112042,
+      "mask_ms_median": 191.90975,
+      "mask_ms_p95": 193.155959,
+      "mask_ms_max": 193.155959,
+      "unmask_ms_min": 0.041167,
+      "unmask_ms_median": 0.042833,
+      "unmask_ms_p95": 0.04575,
+      "unmask_ms_max": 0.04575,
+      "tracemalloc_peak_bytes": 509100,
+      "process_peak_rss_bytes": 25395200,
+      "exact_round_trip": true,
+      "pii_positions": {
+        "start": 0,
+        "middle": 5000,
+        "end": 9999
+      }
+    },
+    {
+      "target_tokens": 100000,
+      "actual_tokens": 100000,
+      "payload_utf8_bytes": 1575000,
+      "masked_utf8_bytes": 1574989,
+      "detected_entities": 3,
+      "mapping_entries": 3,
+      "iterations": 5,
+      "mask_ms_min": 851.618292,
+      "mask_ms_median": 851.785583,
+      "mask_ms_p95": 854.724125,
+      "mask_ms_max": 854.724125,
+      "unmask_ms_min": 0.249167,
+      "unmask_ms_median": 0.2505,
+      "unmask_ms_p95": 0.321292,
+      "unmask_ms_max": 0.321292,
+      "tracemalloc_peak_bytes": 5028717,
+      "process_peak_rss_bytes": 35667968,
+      "exact_round_trip": true,
+      "pii_positions": {
+        "start": 0,
+        "middle": 50000,
+        "end": 99999
+      }
+    }
+  ]
+}

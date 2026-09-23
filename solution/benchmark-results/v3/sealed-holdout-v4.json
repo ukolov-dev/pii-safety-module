@@ -1,0 +1,1160 @@
+{
+  "dataset": "ru_pii_sealed_holdout_v4",
+  "dataset_version": 4,
+  "sources": [
+    "../../database/chunks/CH-SRC-001-05.md",
+    "../../database/chunks/CH-SRC-001-06.md",
+    "../../database/chunks/CH-SRC-001-07.md"
+  ],
+  "case_count": 56,
+  "overall": {
+    "true_positive": 65,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "by_type": {
+    "ADDRESS_APARTMENT": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_CITY": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_COUNTRY": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_HOUSE": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_POSTAL_CODE": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ADDRESS_STREET": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BANK_CARD": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BIRTH_DATE": {
+      "true_positive": 4,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CARDHOLDER_NAME": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CITIZENSHIP": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CVV": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DIVISION_CODE": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DRIVER_LICENSE_RF": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "EMAIL": {
+      "true_positive": 6,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "INN": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_ISSUER": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_ISSUE_DATE": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_RF": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PERSON": {
+      "true_positive": 7,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PHONE_RF": {
+      "true_positive": 4,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PIN": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PLACE_OF_BIRTH": {
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "mask_exact": {
+    "passed": 56,
+    "total": 56,
+    "rate": 1.0
+  },
+  "round_trip_exact": {
+    "passed": 56,
+    "total": 56,
+    "rate": 1.0
+  },
+  "cases": [
+    {
+      "id": "sealed-form-person-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Фамилия, имя, отчество: {{PERSON_1}}.",
+      "actual_mask": "Фамилия, имя, отчество: {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-person-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Согласие получено от {{PERSON_1}}.",
+      "actual_mask": "Согласие получено от {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-person-03",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ФИО клиента — {{PERSON_1}}.",
+      "actual_mask": "ФИО клиента — {{PERSON_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-person-04",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Заявку подала {{PERSON_1}}, действующая лично.",
+      "actual_mask": "Заявку подала {{PERSON_1}}, действующая лично.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-email-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Персональный e-mail заявителя: {{EMAIL_1}}.",
+      "actual_mask": "Персональный e-mail заявителя: {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-email-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Ответ прошу направить мне на адрес <{{EMAIL_1}}>.",
+      "actual_mask": "Ответ прошу направить мне на адрес <{{EMAIL_1}}>.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-phone-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Личный мобильный: {{PHONE_RF_1}}.",
+      "actual_mask": "Личный мобильный: {{PHONE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-phone-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Со мной можно связаться по номеру {{PHONE_RF_1}} вечером.",
+      "actual_mask": "Со мной можно связаться по номеру {{PHONE_RF_1}} вечером.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-inn-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "ИНН налогоплательщика-физлица — {{INN_1}}.",
+      "actual_mask": "ИНН налогоплательщика-физлица — {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-inn-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В заявлении гражданин указал свой ИНН {{INN_1}}.",
+      "actual_mask": "В заявлении гражданин указал свой ИНН {{INN_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-card-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Карта плательщика №{{BANK_CARD_1}}.",
+      "actual_mask": "Карта плательщика №{{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-card-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Возврат следует выполнить на мою карту {{BANK_CARD_1}}.",
+      "actual_mask": "Возврат следует выполнить на мою карту {{BANK_CARD_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-passport-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт гражданина РФ — {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт гражданина РФ — {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-passport-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Паспорт: {{PASSPORT_RF_1}}.",
+      "actual_mask": "Паспорт: {{PASSPORT_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-division-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код выдавшего подразделения: {{DIVISION_CODE_1}}.",
+      "actual_mask": "Код выдавшего подразделения: {{DIVISION_CODE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-birth-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Число, месяц и год рождения: {{BIRTH_DATE_1}}.",
+      "actual_mask": "Число, месяц и год рождения: {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-birth-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Застрахованная родилась {{BIRTH_DATE_1}}.",
+      "actual_mask": "Застрахованная родилась {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-birth-03",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "DOB / дата рождения: {{BIRTH_DATE_1}}.",
+      "actual_mask": "DOB / дата рождения: {{BIRTH_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-birthplace-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "Место рождения: {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-birthplace-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В анкете он написал, что родился в {{PLACE_OF_BIRTH_1}}.",
+      "actual_mask": "В анкете он написал, что родился в {{PLACE_OF_BIRTH_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-citizenship-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Подданство / гражданство: {{CITIZENSHIP_1}}.",
+      "actual_mask": "Подданство / гражданство: {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-citizenship-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Заявитель является гражданином {{CITIZENSHIP_1}}.",
+      "actual_mask": "Заявитель является гражданином {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-issuer-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Орган, выдавший паспорт: {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Орган, выдавший паспорт: {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-issuer-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Удостоверение личности было выдано {{PASSPORT_ISSUER_1}}.",
+      "actual_mask": "Удостоверение личности было выдано {{PASSPORT_ISSUER_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-issue-date-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Когда выдан паспорт: {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Когда выдан паспорт: {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-issue-date-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Документ оформили и выдали ему {{PASSPORT_ISSUE_DATE_1}}",
+      "actual_mask": "Документ оформили и выдали ему {{PASSPORT_ISSUE_DATE_1}}",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-license-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Водительские права: {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Водительские права: {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-license-02",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Для аренды машины предъявлено ВУ № {{DRIVER_LICENSE_RF_1}}.",
+      "actual_mask": "Для аренды машины предъявлено ВУ № {{DRIVER_LICENSE_RF_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-address-01",
+      "counts": {
+        "true_positive": 6,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Адрес физлица: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, город {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Адрес физлица: {{ADDRESS_COUNTRY_1}}, {{ADDRESS_POSTAL_CODE_1}}, город {{ADDRESS_CITY_1}}, улица {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-address-02",
+      "counts": {
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Место регистрации заявителя: {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, {{ADDRESS_STREET_1}} проспект, д. {{ADDRESS_HOUSE_1}}, кв. {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Место регистрации заявителя: {{ADDRESS_POSTAL_CODE_1}}, г. {{ADDRESS_CITY_1}}, {{ADDRESS_STREET_1}} проспект, д. {{ADDRESS_HOUSE_1}}, кв. {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-address-03",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Я живу в городе {{ADDRESS_CITY_1}} на улице {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "actual_mask": "Я живу в городе {{ADDRESS_CITY_1}} на улице {{ADDRESS_STREET_1}}, дом {{ADDRESS_HOUSE_1}}, квартира {{ADDRESS_APARTMENT_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-cvv-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Код безопасности карты (CVC2): {{CVV_1}}.",
+      "actual_mask": "Код безопасности карты (CVC2): {{CVV_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-prose-pin-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Владелец сообщил персональный PIN={{PIN_1}}, что делать запрещено.",
+      "actual_mask": "Владелец сообщил персональный PIN={{PIN_1}}, что делать запрещено.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-form-cardholder-01",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "CARD HOLDER: {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "CARD HOLDER: {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-contact-01",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Анкета: {{PERSON_1}}; телефон {{PHONE_RF_1}}; почта {{EMAIL_1}}.",
+      "actual_mask": "Анкета: {{PERSON_1}}; телефон {{PHONE_RF_1}}; почта {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-document-02",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Личное дело: паспорт {{PASSPORT_RF_1}}, код {{DIVISION_CODE_1}}, выдан {{PASSPORT_ISSUER_1}} {{PASSPORT_ISSUE_DATE_1}}.",
+      "actual_mask": "Личное дело: паспорт {{PASSPORT_RF_1}}, код {{DIVISION_CODE_1}}, выдан {{PASSPORT_ISSUER_1}} {{PASSPORT_ISSUE_DATE_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-payment-03",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Платёжные сведения клиента: {{BANK_CARD_1}}; CVC {{CVV_1}}; владелец {{CARDHOLDER_NAME_1}}.",
+      "actual_mask": "Платёжные сведения клиента: {{BANK_CARD_1}}; CVC {{CVV_1}}; владелец {{CARDHOLDER_NAME_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-biography-04",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "{{PERSON_1}} родилась {{BIRTH_DATE_1}} в {{PLACE_OF_BIRTH_1}}, гражданство — {{CITIZENSHIP_1}}.",
+      "actual_mask": "{{PERSON_1}} родилась {{BIRTH_DATE_1}} в {{PLACE_OF_BIRTH_1}}, гражданство — {{CITIZENSHIP_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-repeated-05",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Личная почта {{EMAIL_1}} совпадает с подтверждением {{EMAIL_1}}.",
+      "actual_mask": "Личная почта {{EMAIL_1}} совпадает с подтверждением {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-multi-loose-prose-06",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Прошу обновить мои данные: меня зовут {{PERSON_1}}, мой новый номер {{PHONE_RF_1}} и email {{EMAIL_1}}.",
+      "actual_mask": "Прошу обновить мои данные: меня зовут {{PERSON_1}}, мой новый номер {{PHONE_RF_1}} и email {{EMAIL_1}}.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-literature-01",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "На семинаре сравнивали рассказы Антона Чехова и Ивана Бунина.",
+      "actual_mask": "На семинаре сравнивали рассказы Антона Чехова и Ивана Бунина.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-public-person-02",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Доклад посвящён научным трудам Дмитрия Менделеева.",
+      "actual_mask": "Доклад посвящён научным трудам Дмитрия Менделеева.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-hotline-03",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Общероссийская линия консультаций: 8 800 700-40-50.",
+      "actual_mask": "Общероссийская линия консультаций: 8 800 700-40-50.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-reception-04",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Городская приёмная отвечает по телефону +7 (343) 222-11-00.",
+      "actual_mask": "Городская приёмная отвечает по телефону +7 (343) 222-11-00.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-mailbox-05",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Для закупок опубликован общий ящик tender@company.example.",
+      "actual_mask": "Для закупок опубликован общий ящик tender@company.example.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-mailbox-06",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Редакционные запросы принимает newsdesk@media.example.",
+      "actual_mask": "Редакционные запросы принимает newsdesk@media.example.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-office-07",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Главный офис организации открыт по адресу: Казань, улица Баумана, дом 15.",
+      "actual_mask": "Главный офис организации открыт по адресу: Казань, улица Баумана, дом 15.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-event-date-08",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Выставка открылась 16.10.1983 и завершилась 28 января 1990 года.",
+      "actual_mask": "Выставка открылась 16.10.1983 и завершилась 28 января 1990 года.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-invalid-calendar-09",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "В демонстрационной форме специально стоят даты 31.11.2024 и 30.02.2020.",
+      "actual_mask": "В демонстрационной форме специально стоят даты 31.11.2024 и 30.02.2020.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-invalid-checksum-10",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Контроль должен отклонить ИНН 7707083894 и карту 4111111111111112.",
+      "actual_mask": "Контроль должен отклонить ИНН 7707083894 и карту 4111111111111112.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-inventory-11",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Инвентарный номер оборудования: 46 09 718245.",
+      "actual_mask": "Инвентарный номер оборудования: 46 09 718245.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-logistics-12",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Маршрут контейнера имеет внутренний код 540-018.",
+      "actual_mask": "Маршрут контейнера имеет внутренний код 540-018.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-geography-13",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Новосибирск расположен в России, а Владивосток — у Японского моря.",
+      "actual_mask": "Новосибирск расположен в России, а Владивосток — у Японского моря.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-security-advice-14",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Сотрудники никогда не запрашивают паспорт, PIN или код CVC2 в чате.",
+      "actual_mask": "Сотрудники никогда не запрашивают паспорт, PIN или код CVC2 в чате.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-test-payment-15",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Учебная инструкция содержит публичный тестовый PAN 5555-5555-5555-4444.",
+      "actual_mask": "Учебная инструкция содержит публичный тестовый PAN 5555-5555-5555-4444.",
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "sealed-negative-catalog-16",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "expected_mask": "Модель устройства 4013-908172 доступна в синем цвете.",
+      "actual_mask": "Модель устройства 4013-908172 доступна в синем цвете.",
+      "missing": [],
+      "unexpected": []
+    }
+  ]
+}
