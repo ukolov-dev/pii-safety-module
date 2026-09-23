@@ -11,15 +11,15 @@
 
 ## Общий поток
 ```
-RAW ──(извлечение)──> database ──(подготовка)──> COOKED
+Источники → .project-context/active → .project-context/active/requirements
 ```
 
 ## Контуры работы
 
 ### Контур сбора и постановки требований (база знаний)
 - Сбор, извлечение и постановка требований.
-- Работает с `RAW/`, `database/`, `COOKED/`, `playbooks/`.
-- Поток: `RAW → database → COOKED`.
+- Работает с `RAW/`, `database/`, `.project-context/active/requirements/`, `playbooks/`.
+- Поток: `RAW → database → .project-context/active/requirements`.
 - **Разделение баз знаний**: материалы о регламенте проведения хакатона (правила, инструкции, критерии оценки) → `hackathon_database/`; требования к самой системе → `database/`.
 
 ### Контур разработки (документация по коду)
@@ -29,7 +29,7 @@ RAW ──(извлечение)──> database ──(подготовка)─
 
 ## Порядок работы по задачам
 1. **Обработка источника** → `playbooks/process_source.md` (регистрация → чанки → тематические знания → глоссарий → решения и вопросы → покрытие).
-2. **Требования** → `playbooks/manage_requirements.md` → `COOKED/requirements/current_specification.md`.
+2. **Требования** → `playbooks/manage_requirements.md` → `.project-context/active/requirements/REQUIREMENT-20260923-226.md`.
 3. **Вопросы и конфликты** → `playbooks/resolve_questions.md`.
 4. **Словарь данных** → `playbooks/maintain_data_dictionary.md` → `.project-context/active/sources/SOURCE-20260923-732.md`.
 5. **Глоссарий** → `playbooks/maintain_glossary.md` → `.project-context/active/sources/SOURCE-20260923-333.md`.
@@ -57,4 +57,4 @@ RAW ──(извлечение)──> database ──(подготовка)─
 
 ## Расположение материалов в публичной версии
 
-Каталоги `database/`, `hackathon_database/` и текстовые источники `RAW/` объединены с `.project-context/active/`. Перед обращением к историческому пути используйте [указатель материалов](.project-context/SOURCE_MAP.md). Исторические копии документов в контексте могут описывать прежнюю структуру. Новые знания записывайте в контекст; проверяйте утверждения по актуальному коду и тестам.
+Каталоги `database/`, `hackathon_database/`, текстовые источники `RAW/` и документы `COOKED/` объединены с `.project-context/active/`. Перед обращением к историческому пути используйте [указатель материалов](.project-context/SOURCE_MAP.md). Исторические копии документов в контексте могут описывать прежнюю структуру. Новые знания записывайте в контекст; проверяйте утверждения по актуальному коду и тестам.

@@ -157,11 +157,12 @@ modules:
     playbooks:
     - playbooks/process_source.md
   specifications:
-    path: COOKED
+    path: .project-context/active
     aliases:
     - specifications
     source_globs:
-    - COOKED/**/*.{ts,tsx,js,jsx,mjs,cjs,java,kt,kts,go,rs,py,rb,php,cs,sql,xml,yaml,yml,md}
+    - .project-context/active/requirements/REQUIREMENT-20260923-226.md
+    - .project-context/active/sources/SOURCE-20260923-756.md
     playbooks:
     - playbooks/manage_requirements.md
     - playbooks/maintain_traceability.md

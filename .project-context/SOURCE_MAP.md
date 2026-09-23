@@ -4,6 +4,8 @@
 
 | Исторический путь | Запись контекста |
 | --- | --- |
+| `COOKED/README.md` | [SOURCE-20260923-756](active/sources/SOURCE-20260923-756.md) |
+| `COOKED/requirements/current_specification.md` | [REQUIREMENT-20260923-226](active/requirements/REQUIREMENT-20260923-226.md) |
 | `RAW/2026-09-22-opening-transcript.txt` | [SOURCE-20260923-658](active/sources/SOURCE-20260923-658.md) |
 | `RAW/2026-09-23-hackathon-portal.md` | [SOURCE-20260923-157](active/sources/SOURCE-20260923-157.md) |
 | `RAW/README.md` | [SOURCE-20260923-960](active/sources/SOURCE-20260923-960.md) |
