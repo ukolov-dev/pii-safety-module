@@ -3,7 +3,7 @@
 The benchmark measures the current deterministic detector with exact span matching and
 does not alter production detection rules. Its label set mirrors every mandatory PII
 category listed in
-[`CH-SRC-001-05`](../../.project-context/active/source-chunks/SOURCE-CHUNK-20260923-925.md). Address components use
+[`CH-SRC-001-05`](../../database/chunks/CH-SRC-001-05.md). Address components use
 separate `ADDRESS_*` labels because the source explicitly requires them to be identified
 separately; these names are benchmark labels rather than a new API contract.
 

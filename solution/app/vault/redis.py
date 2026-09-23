@@ -110,8 +110,5 @@ class RedisVault:
         # to report work already performed by the server.
         return 0
 
-    async def ping(self) -> bool:
-        return bool(await self._redis.ping())
-
     async def close(self) -> None:
         await self._redis.aclose()

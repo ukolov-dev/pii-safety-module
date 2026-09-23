@@ -7,7 +7,6 @@ from collections.abc import Iterable, Iterator
 from datetime import datetime
 
 from .models import DetectedEntity
-from .overlap import merge_greedy_non_overlapping
 
 _EMAIL_RE = re.compile(
     r"(?<![\w.+-])[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+"
@@ -378,13 +377,28 @@ def _candidates(text: str) -> Iterator[DetectedEntity]:
                 yield _entity(text, entity_type, start, end, 0.96, "personal_address", 90)
 
 
+def _overlap(left: DetectedEntity, right: DetectedEntity) -> bool:
+    return left.start < right.end and right.start < left.end
+
+
 def _merge_overlaps(candidates: Iterable[DetectedEntity]) -> list[DetectedEntity]:
     """Keep the strongest non-overlapping spans, then restore source order."""
 
-    return merge_greedy_non_overlapping(
+    ranked = sorted(
         candidates,
-        entity_type_tiebreak=True,
+        key=lambda item: (
+            -item.priority,
+            -item.confidence,
+            -(item.end - item.start),
+            item.start,
+            item.entity_type,
+        ),
     )
+    accepted: list[DetectedEntity] = []
+    for candidate in ranked:
+        if not any(_overlap(candidate, existing) for existing in accepted):
+            accepted.append(candidate)
+    return sorted(accepted, key=lambda item: (item.start, item.end, item.entity_type))
 
 
 def detect(text: str) -> list[DetectedEntity]:

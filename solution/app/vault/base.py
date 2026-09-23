@@ -20,10 +20,6 @@ class Vault(Protocol):
         """Remove expired records and return the number removed."""
         ...
 
-    async def ping(self) -> bool:
-        """Return whether the backing store is currently reachable."""
-        ...
-
     async def close(self) -> None:
         """Release backend resources."""
         ...

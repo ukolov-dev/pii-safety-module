@@ -12,7 +12,6 @@ from collections.abc import Iterable, Iterator
 from datetime import datetime
 
 from .models import DetectedEntity
-from .overlap import merge_greedy_non_overlapping
 
 _SEP = r"\s*(?:[:=№]|[-–—])?\s*"
 _PERSON_QUALIFIER = (
@@ -389,11 +388,26 @@ def _candidates(text: str) -> Iterator[DetectedEntity]:
                 yield _entity(text, entity_type, start, end, 0.96, "personal_address_v3", 91)
 
 
+def _overlap(left: DetectedEntity, right: DetectedEntity) -> bool:
+    return left.start < right.end and right.start < left.end
+
+
 def _merge_overlaps(candidates: Iterable[DetectedEntity]) -> list[DetectedEntity]:
-    return merge_greedy_non_overlapping(
+    ranked = sorted(
         candidates,
-        entity_type_tiebreak=True,
+        key=lambda item: (
+            -item.priority,
+            -item.confidence,
+            -(item.end - item.start),
+            item.start,
+            item.entity_type,
+        ),
     )
+    accepted: list[DetectedEntity] = []
+    for candidate in ranked:
+        if not any(_overlap(candidate, existing) for existing in accepted):
+            accepted.append(candidate)
+    return sorted(accepted, key=lambda item: (item.start, item.end, item.entity_type))
 
 
 def detect(text: str) -> list[DetectedEntity]:
@@ -404,3 +418,4 @@ def detect(text: str) -> list[DetectedEntity]:
     if not text:
         return []
     return _merge_overlaps(_candidates(text))
+

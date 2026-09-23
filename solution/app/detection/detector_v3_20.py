@@ -15,7 +15,6 @@ from datetime import date
 from .detector_v3_13 import detect as detect_v3_13
 from .detector_v3_18 import detect as detect_v3_18
 from .models import DetectedEntity
-from .overlap import merge_greedy_non_overlapping
 
 _WORD = r"[А-ЯЁа-яё]{2,}(?:-[А-ЯЁа-яё]{2,})*"
 _DATE = (
@@ -332,8 +331,20 @@ def _suppressed(text: str, entity: DetectedEntity) -> bool:
     return False
 
 
+def _overlap(left: DetectedEntity, right: DetectedEntity) -> bool:
+    return left.start < right.end and right.start < left.end
+
+
 def _merge(entities: Iterable[DetectedEntity]) -> list[DetectedEntity]:
-    return merge_greedy_non_overlapping(entities)
+    ranked = sorted(
+        entities,
+        key=lambda item: (-item.priority, -item.confidence, -(item.end - item.start), item.start),
+    )
+    accepted: list[DetectedEntity] = []
+    for entity in ranked:
+        if not any(_overlap(entity, current) for current in accepted):
+            accepted.append(entity)
+    return sorted(accepted, key=lambda item: (item.start, item.end, item.entity_type))
 
 
 def detect(text: str) -> list[DetectedEntity]:

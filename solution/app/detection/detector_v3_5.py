@@ -12,7 +12,6 @@ from datetime import datetime
 
 from .detector_v3_3 import detect as detect_v3_3
 from .models import DetectedEntity
-from .overlap import merge_greedy_non_overlapping
 
 _SEP = r"\s*(?:[:=№/]|[-–—])?\s*"
 _WORD = r"[А-Яа-яЁё]{2,}(?:-[А-Яа-яЁё]{2,})*"
@@ -329,8 +328,20 @@ def _new_candidates(text: str) -> Iterator[DetectedEntity]:
                 )
 
 
+def _overlap(left: DetectedEntity, right: DetectedEntity) -> bool:
+    return left.start < right.end and right.start < left.end
+
+
 def _merge(candidates: Iterable[DetectedEntity]) -> list[DetectedEntity]:
-    return merge_greedy_non_overlapping(candidates)
+    ranked = sorted(
+        candidates,
+        key=lambda item: (-item.priority, -item.confidence, -(item.end - item.start), item.start),
+    )
+    accepted: list[DetectedEntity] = []
+    for candidate in ranked:
+        if not any(_overlap(candidate, current) for current in accepted):
+            accepted.append(candidate)
+    return sorted(accepted, key=lambda item: (item.start, item.end, item.entity_type))
 
 
 def _keep_baseline(text: str, entity: DetectedEntity) -> bool:

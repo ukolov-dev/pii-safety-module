@@ -96,8 +96,5 @@ class InMemoryVault:
                 del self._records[payload_id]
             return len(expired_ids)
 
-    async def ping(self) -> bool:
-        return True
-
     async def close(self) -> None:
         return None

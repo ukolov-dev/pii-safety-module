@@ -13,10 +13,6 @@ def payload_hash(payload: str) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-class PayloadConflictError(ValueError):
-    """The payload does not match a valid transition for an existing identifier."""
-
-
 class ProcessService:
     def __init__(self, vault: Vault, *, ttl_seconds: int) -> None:
         self._vault = vault
@@ -29,11 +25,7 @@ class ProcessService:
         if existing is not None:
             if digest == existing.request_hash:
                 return existing.masked_result
-            if digest == payload_hash(existing.masked_result):
-                return unmask_text(payload, existing.mapping)
-            raise PayloadConflictError(
-                "payload_id already exists and payload is neither the source nor its mask"
-            )
+            return unmask_text(payload, existing.mapping)
 
         entities = detect(payload)
         masked = mask_text(payload, entities)
@@ -54,8 +46,5 @@ class ProcessService:
         # be restored using the winning mapping.
         if digest == result.record.request_hash:
             return result.record.masked_result
-        if digest == payload_hash(result.record.masked_result):
-            return unmask_text(payload, result.record.mapping)
-        raise PayloadConflictError(
-            "payload_id was claimed concurrently by a different payload"
-        )
+        return unmask_text(payload, result.record.mapping)
+

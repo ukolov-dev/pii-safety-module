@@ -29,9 +29,6 @@ class FakeRedis:
     async def get(self, key: str) -> bytes | None:
         return self.values.get(key)
 
-    async def ping(self) -> bool:
-        return True
-
     async def aclose(self) -> None:
         self.closed = True
 
@@ -153,6 +150,5 @@ async def test_redis_vault_uses_atomic_create_and_encrypted_mapping() -> None:
     assert dict((await vault.get("payload-1")).mapping) == {
         "{{PERSON_1}}": "Иван Иванов"
     }
-    assert await vault.ping() is True
     await vault.close()
     assert redis.closed is True
