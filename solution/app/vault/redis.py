@@ -33,7 +33,9 @@ class RedisVault:
                 raise RuntimeError(
                     "redis package is required when REDIS_URL is configured"
                 ) from exc
-            redis_client = Redis.from_url(redis_url, decode_responses=False)
+            redis_client = Redis.from_url(
+                redis_url, decode_responses=False, socket_connect_timeout=2, socket_timeout=2
+            )
         self._redis = redis_client
 
     def _key(self, payload_id: str) -> str:

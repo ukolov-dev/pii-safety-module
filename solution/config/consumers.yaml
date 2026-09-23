@@ -1,17 +1,19 @@
+# Public portal preserves the hackathon contract (no extra headers).
+default_consumer: portal
 consumers:
-  default:
+  portal:
     enabled: true
-    mask_types:
-      - PERSON
-      - EMAIL
-      - PHONE_RF
-      - INN
-      - BANK_CARD
-      - PASSPORT_RF
-      - BIRTH_DATE
-      - DIVISION_CODE
-      - CVV
-      - PIN
+    public_access: true
+    mask_types: null  # all detected types
     demask_enabled: true
     vault_ttl_seconds: 900
-
+  partner:
+    enabled: false
+    api_key_env: PARTNER_API_KEY
+    mask_types: null
+    demask_enabled: true
+    vault_ttl_seconds: 900
+  disabled_example:
+    enabled: false
+    mask_types: [EMAIL, PHONE_RF]
+    demask_enabled: false

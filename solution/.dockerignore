@@ -1,9 +1,7 @@
-.venv/
-__pycache__/
+.venv
+__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
 *.pyc
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.env
-.env.*
-*.zip
+tests

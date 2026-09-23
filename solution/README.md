@@ -1,10 +1,7 @@
-# PII Safety Module — детектор v3.26
+# PII Safety Module — версия 0.1
 
-Версия сервиса для идентификации, обратимого маскирования и демаскирования
+Первая версия сервиса для идентификации, обратимого маскирования и демаскирования
 персональных данных через единый `POST /process`.
-
-Активен детектор `v3.26`; версия Python-пакета и API остаётся `0.1.0`.
-Происхождение сборки и проверки описаны в [`VERSION.md`](VERSION.md).
 
 ## Контракт
 
@@ -55,8 +52,9 @@ curl -s -X POST http://127.0.0.1:8080/process \
 k6 run tests/load/process.js
 ```
 
-Исторические результаты сборки v6 с детектором v3.26 описаны в
-[`benchmark-results/v6/IMPROVEMENT_REPORT.md`](benchmark-results/v6/IMPROVEMENT_REPORT.md).
+Локальные benchmark-контуры и фактические результаты версии 1 описаны в
+[`benchmark-results/LOCAL_BENCHMARK_V1.md`](benchmark-results/LOCAL_BENCHMARK_V1.md).
+Результаты итерации детектора v2: [`benchmark-results/v2/IMPROVEMENT_REPORT.md`](benchmark-results/v2/IMPROVEMENT_REPORT.md).
 Отдельные инструкции: [`benchmark/README.md`](benchmark/README.md) и
 [`tests/load/README.md`](tests/load/README.md).
 
@@ -67,3 +65,41 @@ k6 run tests/load/process.js
 - При отсутствии `REDIS_URL` используется память одного процесса.
 - Для production необходимо задать постоянный `MAPPING_ENCRYPTION_KEY` и Redis.
 - Поддержка всех типов ПД и 1000 RPS должна быть подтверждена отдельным benchmark.
+
+## VPS demo и потребители (23.09.2026)
+
+Адрес: `https://demo.vibecodefromvoronezh.com/process`; документация: `/docs`.
+Публичный профиль `portal` сохраняет контракт жюри без дополнительных заголовков.
+Для именованного профиля передаются `X-Consumer-ID` и `X-API-Key`; ключ берётся из
+переменной окружения, указанной в `api_key_env`. Профили имеют изолированные
+таблицы соответствий даже при одинаковом `payload_id`.
+
+### Настройка за пять предложений
+
+1. Добавьте потребителя в `deploy/consumers.vps.yaml` и установите `enabled`.
+2. Укажите `api_key_env`, а соответствующий случайный ключ длиной не менее 32 символов сохраните в серверном `/opt/projects/pii-safety/.env` и передайте сервису через Compose environment.
+3. Задайте `mask_types` (null — все обнаруживаемые типы), `demask_enabled` и `vault_ttl_seconds`.
+4. Примените изменения через `docker compose -p pii-safety --env-file /opt/projects/pii-safety/.env -f /opt/projects/pii-safety/releases/20260923-consumers/deploy/compose.vps.yml up -d --force-recreate api`.
+5. Проверьте запрос с `X-Consumer-ID` и `X-API-Key`, а также запрет доступа отключённому потребителю.
+
+### Наблюдаемость
+
+- `/metrics` доступен локально и Prometheus; публичный nginx возвращает 404.
+- RPS: `sum(rate(pii_api_requests_total{job="pii-safety",operation="process"}[2m]))`.
+- Latency p95: `histogram_quantile(0.95,sum by(le)(rate(pii_api_request_duration_seconds_bucket{job="pii-safety",operation="process"}[2m])))`.
+- TPS: `sum(rate(pii_api_processed_tokens_total{job="pii-safety"}[2m]))`.
+- TPS считает последовательности непробельных символов; это не токенизация LLM.
+- JSON-логи содержат сгенерированный request_id, настроенное имя потребителя,
+  этап, типы и количество сущностей, длительность; исходные данные, payload_id и ключи не пишутся.
+- Readiness проверяет хранилище; недоступность возвращает 503 без деталей подключения.
+- Логи контейнеров ротируются; Prometheus хранит метрики, Grafana показывает панель `PII Safety — demo`.
+
+### Эксплуатационные ограничения
+
+`portal` намеренно публичный для автопроверки: его payload_id должен быть случайным
+и непредсказуемым (UUID), а реальные ПД для публичного демо не нужны.
+Остальные потребители требуют ключ; отключите `portal`, если нужен полностью закрытый контур.
+Состояние Redis временное (TTL, без AOF): перезапуск Redis теряет таблицы соответствий;
+перезапуск API с тем же постоянным ключом их сохраняет.
+Новая наблюдаемость и политики проверены функционально; прежний нагрузочный отчёт
+не является измерением этого развёртывания.

@@ -1,0 +1,244 @@
+# Исследование open-source решений для модуля защиты ПД в LLM-потоке
+
+Дата среза: **2026-09-23**.
+
+Статус документа: рабочее исследование, не утверждённая спецификация и не новый набор требований. Внешние GitHub-источники не внесены в официальный реестр источников базы знаний.
+
+## 1. Что искали
+
+Искался open-source продукт или набор компонентов, который максимально близок к целевой системе:
+
+- прокси между системой-потребителем и LLM;
+- распознавание русскоязычных ПД и российских идентификаторов;
+- маскирование первого запроса и восстановление данных во втором запросе по `payload_id`;
+- сохранение смысла текста после маскирования;
+- правила по разным системам-потребителям;
+- отсутствие исходных ПД в логах и метриках;
+- расширяемые recognizers и виды маскирования;
+- ориентир 1000 RPS и latency не более 1 секунды;
+- целевой контракт `POST /process`.
+
+Основание критериев: [обзор](../overview.md), [архитектура](../architecture.md), [данные](../data.md), [тестирование](../testing.md), чанки [CH-SRC-001-03](../chunks/CH-SRC-001-03.md), [CH-SRC-001-05](../chunks/CH-SRC-001-05.md), [CH-SRC-001-07](../chunks/CH-SRC-001-07.md), [CH-SRC-001-08](../chunks/CH-SRC-001-08.md), [CH-SRC-001-10](../chunks/CH-SRC-001-10.md).
+
+## 2. Методика оценки match
+
+Итоговый балл — экспертная оценка близости к **целой системе**, а не заявленная авторами репозитория метрика:
+
+| Критерий | Вес |
+|---|---:|
+| Обратимое маскирование и корреляция mask → unmask | 25 |
+| Полнота PII detection, русский язык и идентификаторы РФ | 20 |
+| Прокси/API-интеграция | 15 |
+| Политики для разных потребителей и расширяемость | 10 |
+| Безопасность, защищённое хранение и безопасные логи | 10 |
+| Доказательства latency/RPS | 10 |
+| Зрелость, активность и лицензия | 10 |
+| **Итого** | **100** |
+
+Правила интерпретации:
+
+- `80–100` — сильная основа, но не обязательно готовый продукт;
+- `65–79` — полезный архитектурный референс или ускоритель прототипа;
+- `45–64` — отдельный компонент;
+- `<45` — нишевой компонент или слабое соответствие.
+
+Stars, даты и бенчмарки — снимок на дату исследования. Бенчмарки из README считаются заявлениями авторов, пока не воспроизведены на целевом датасете и инфраструктуре.
+
+## 3. Главный вывод
+
+**Готового drop-in решения нет.** Ни один найденный репозиторий из коробки не реализует одновременно:
+
+1. полный целевой набор российских ПД;
+2. первый `POST /process` как маскирование и второй вызов с тем же `payload_id` как демаскирование;
+3. идемпотентные ретраи и общее состояние между репликами;
+4. политики по потребителю;
+5. подтверждённые 1000 RPS на полном detection + masking + persistence пути.
+
+Наиболее рациональная основа:
+
+> **Presidio + российские recognizers + Natasha/Slovnet или проверенный multilingual NER + собственный зашифрованный token vault и адаптер `POST /process`.**
+
+Для быстрого прототипа полезнее всего изучить `dewil/pii-mask`, `AI-Gate`, `Kiji`, `Prompt Anonymizer` и `pii-proxy`: у них уже реализованы разные варианты round-trip маскирования.
+
+## 4. Ранжированный shortlist
+
+| Место | Решение | Match | Почему интересно | Критический пробел |
+|---:|---|---:|---|---|
+| 1 | [Presidio](https://github.com/data-privacy-stack/presidio) + [presidio-ru-recognizers](https://github.com/brikkoAI/presidio-ru-recognizers) + [Natasha](https://github.com/natasha/natasha) | **82** | Самая зрелая расширяемая основа: regex/checksum/NER, custom recognizers, REST/Docker, несколько операторов masking, AES encrypt/decrypt | Нужны собственные API/state/tenant policy; покрытие РФ всё равно неполное; нет подтверждения 1000 RPS полного пути |
+| 2 | [dewil/pii-mask](https://github.com/dewil/pii-mask) | **78** | Самый близкий русскоцентричный flow: РФ regex/checksum + Natasha, stateless mapping, `/mask` и `/unmask`, fail-closed, тела запросов не логируются | Очень молодой проект; нет `/process`, `payload_id`, общего encrypted store, performance/F1 на реальных данных |
+| 3 | [AI-Gate](https://github.com/oleg-vdv/AI-Gateway) | **76** | On-prem proxy, reversible tokens, encrypted TTL mapping store, fail-closed, metadata-only hash-chain audit, политики по channel/user-group, кириллица | 7 stars/10 commits, pattern-based names без NER, нет streaming и нагрузочного бенчмарка; AGPL-3.0 |
+| 4 | [daslabhq/pii-proxy](https://github.com/daslabhq/pii-proxy) | **74** | Bijective real↔synthetic map хорошо сохраняет fluency; custom detectors/generators; deterministic unmask; object masking | Пока библиотека, не gateway; русский не доказан; лучший NER ещё не поставляется; storage/encryption/audit — BYO |
+| 5 | [Dataiku Kiji Privacy Proxy](https://github.com/dataiku/kiji-proxy) | **72** | Готовый local proxy, 26 типов, реалистичные подстановки и восстановление ответа, custom regex, ONNX, Docker/Linux | Русский и идентификаторы РФ не заявлены; нет tenant-aware policy и `/process`; только заявленные sub-100 ms, без 1000 RPS evidence |
+| 6 | [LiteLLM + Presidio](https://github.com/BerriAI/litellm) | **69** | Зрелый gateway: provider routing, retry/fallback, keys, rate limits, Prometheus; есть Presidio masking и восстановление ответа | Guardrail-путь имеет зафиксированные fail-open/reinjection gaps; часть team policies Enterprise; нужен отдельный `payload_id` vault |
+| 7 | [PasteGuard](https://github.com/sgasser/pasteguard) | **68** | Local-first proxy, placeholders и восстановление ответа, multilingual GLiNER, streaming, dashboard, OpenAI/Anthropic | Нет доказанного покрытия идентификаторов РФ, tenant contract и RPS; логи требуют отдельной проверки на отсутствие исходных ПД |
+| 8 | [Tamga](https://github.com/yatuk/tamga) | **67** | Policy proxy, audit/event bus, rate limiting, custom entities; опубликовано 1000 RPS / p95 130 ms; reversible vault есть на `main` | Турецкий, а не российский PII; vault ещё unreleased; 11 из 17 PII stress-векторов обходят static path; AGPL/open-core |
+| 9 | [Prompt Anonymizer](https://github.com/akazah/prompt-anonymizer) | **63** | Reversible labels, streaming proxy, mappings по умолчанию не пишутся на диск, CLI/MCP/Python/JS | Русского нет; mapping in-memory/per-request; нет distributed vault, RBAC и RPS evidence |
+| 10 | [Mithril Veil](https://github.com/Kirill-Murashev/mithril-veil) | **61** | Широкий набор РФ identifiers, checksum, Natasha/GLiNER, policy presets, FastAPI/Docker, encrypted mapping для CLI | Restore/de-anonymize прямо не реализован; первый alpha, нет latency/F1; нет `/process`/`payload_id` |
+
+## 5. Подробности по ключевым кандидатам
+
+### 5.1 Presidio — рекомендуемое ядро
+
+Состояние: MIT, Python, 11k stars, релиз [2.2.364](https://github.com/data-privacy-stack/presidio/releases/tag/2.2.364) от 2026-07-22, коммиты до 2026-09-22.
+
+Готово:
+
+- анализ через NER, regex, правила, checksums и custom/remote recognizers;
+- replace, redact, mask, hash, encrypt и обратный decrypt через `DeanonymizeEngine` — [операторы](https://github.com/data-privacy-stack/presidio/blob/main/docs/anonymizer/index.md);
+- Python API, REST и Docker/GHCR — [installation](https://github.com/data-privacy-stack/presidio/blob/main/docs/installation.md);
+- языковые модели и recognizers можно конфигурировать — [languages](https://github.com/data-privacy-stack/presidio/blob/main/docs/analyzer/languages.md), [adding recognizers](https://github.com/data-privacy-stack/presidio/blob/main/docs/analyzer/adding_recognizers.md).
+
+Не готово:
+
+- LLM proxy и целевой `POST /process`;
+- state/session по `payload_id`;
+- authn/authz: REST-контейнеры сознательно поставляются без встроенной аутентификации — [FAQ](https://github.com/data-privacy-stack/presidio/blob/main/docs/faq.md);
+- русский профиль и полный набор идентификаторов РФ;
+- универсальные accuracy и throughput гарантии.
+
+### 5.2 Российские recognizers и NER
+
+[presidio-ru-recognizers](https://github.com/brikkoAI/presidio-ru-recognizers) добавляет ИНН, СНИЛС, ОГРН, ОГРНИП, паспорт РФ, российский телефон и банковский счёт. Для ИНН/СНИЛС/ОГРН/ОГРНИП используются контрольные суммы. Проект мал: 3 stars, без PyPI-релиза; это полезный код recognizers, но не самостоятельный сервис.
+
+[Natasha](https://github.com/natasha/natasha) / [Slovnet](https://github.com/natasha/slovnet) дают CPU/offline NER для `PER/LOC/ORG`, нормализацию русских имён и rule-based extraction. Они не распознают полный набор документов и финансовых идентификаторов и не маскируют данные сами.
+
+[DeepPavlov](https://github.com/deeppavlov/DeepPavlov) — более тяжёлая альтернатива для русского `PER/LOC/ORG`. Имеет REST deployment, но вход модели ограничен и отсутствует masking/vault. Имеет смысл только если целевой benchmark покажет выигрыш над Natasha при допустимой задержке.
+
+### 5.3 dewil/pii-mask — лучший прямой прототип для русского языка
+
+Состояние: MIT, 1 star, 23 commits, без релизов.
+
+Готово по [README](https://github.com/dewil/pii-mask#readme):
+
+- regex + checksums для телефона, email, ИНН, ОГРН/ОГРНИП, СНИЛС, карт, контекстного паспорта;
+- Natasha/Slovnet для имён и организаций с нормализацией падежей;
+- форматосохраняющие фейки для телефонов/email;
+- mapping возвращается вызывающему, есть `/mask`, `/unmask`, healthcheck;
+- fail-closed и явное отсутствие тел запросов в логах;
+- тесты round-trip, идемпотентности и устойчивости к выдуманным токенам.
+
+Ограничения, которые честно описывает автор:
+
+- количественного recall/F1 на реальных данных нет;
+- адреса и косвенные ПД слабы без локального LLM-аудитора;
+- mapping содержит исходные ПД;
+- нет DOB, гражданства, ВУ, органа/кода/даты выдачи паспорта, CVV/PIN/cardholder;
+- нет clustered state store и нагрузочных данных.
+
+### 5.4 AI-Gate — ближайший архитектурный референс
+
+[AI-Gate](https://github.com/oleg-vdv/AI-Gateway) ближе других к production-схеме: `[TYPE_N]` tokens, восстановление ответа, encrypted in-memory mapping store с TTL, fail-closed, hash-chain audit без значений ПД, политики `mask/block/allow`, OpenAI-compatible/Anthropic transport.
+
+Проект следует рассматривать как источник архитектурных паттернов, а не как зрелую зависимость: очень мало пользователей и коммитов, нет NER и публичного throughput benchmark, лицензия AGPL-3.0.
+
+### 5.5 Kiji и PasteGuard — готовые UX/proxy референсы
+
+[Kiji](https://github.com/dataiku/kiji-proxy) имеет local ONNX detection, 26 типов, synthetic replacements и automatic restoration, custom regex, Linux/systemd/Docker. README заявляет sub-100 ms для большинства запросов, но не публикует эквивалент целевого 1000 RPS прогона.
+
+[PasteGuard](https://github.com/sgasser/pasteguard) поддерживает OpenAI/Anthropic proxy, multilingual GLiNER, placeholders, response restoration и streaming. Он полезен для изучения integration path, но наличие «multilingual» не доказывает качество на российских документах и реквизитах.
+
+### 5.6 Tamga — источник performance и policy паттернов
+
+[Tamga](https://github.com/yatuk/tamga) публикует k6-результат: 1000 RPS, p95 130 ms, 0% ошибок на single-process Go proxy/consumer CPU. Static scanner работает быстро, но сам автор показывает ограничение качества: из 17 PII adversarial vectors детектированы 6. Reversible vault находится в unreleased `main`, а профиль PII ориентирован на Турцию. Брать стоит идеи policy hot-reload, event bus, rate limits и тестовый контур, а не detector как есть.
+
+### 5.7 LiteLLM + Presidio — gateway, но не security boundary из коробки
+
+[LiteLLM](https://github.com/BerriAI/litellm) полезен для routing/fallback/provider abstraction. Presidio guardrail умеет маскировать вход и пытается восстанавливать выход, однако в публичном issue tracker зафиксированы риски:
+
+- fail-open и непокрытые Responses/stream пути — [#30728](https://github.com/BerriAI/litellm/issues/30728);
+- отсутствие восстановления в tool-call arguments — [#31950](https://github.com/BerriAI/litellm/issues/31950);
+- коллизии токенов между messages — [#31959](https://github.com/BerriAI/litellm/issues/31959);
+- ранее отдельно исправлялись offsets для кириллицы — [#24160](https://github.com/BerriAI/litellm/issues/24160).
+
+Вывод: LiteLLM можно ставить **после** собственного fail-closed PII-модуля, но нельзя считать его Presidio integration готовой границей безопасности без собственного тестирования и исправлений.
+
+## 6. Компонентный longlist
+
+| Решение | Роль | Лицензия / зрелость | Whole-system match | Решение по использованию |
+|---|---|---|---:|---|
+| [LLM Guard](https://github.com/protectai/llm-guard) | Anonymize → Vault → Deanonymize scanner pipeline | MIT, 3.2k stars, **архивирован** | 58 | Только референс round-trip и scanner API; не брать как долгосрочное ядро |
+| [NVIDIA NeMo Anonymizer](https://github.com/NVIDIA-NeMo/Anonymizer) | PII detector/anonymizer | Apache-2.0, 106 stars | 58 | Исследовать detector, но нет штатного unmask и доказанного русского |
+| [OpenAI Privacy Filter](https://github.com/openai/privacy-filter) | Локальный long-context detector/redactor | Apache-2.0, 2.7k stars | 55 | Возможный дополнительный recognizer; русский/Latin limitation и нет vault/API |
+| [NVIDIA NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Programmable guardrails server | Apache-2.0, 7.2k stars | 52 | Полезен для rails, но masking one-way и логи требуют осторожности |
+| [packyme/privacy-filter](https://github.com/packyme/privacy-filter) | Быстрый Go regex redactor | MIT, 337 stars | 49 | Можно заимствовать hot path для structured PII; нет ФИО/адресов и unmask |
+| [DataFog](https://github.com/DataFog/datafog-python) | Offline detector/redactor, LiteLLM guardrail | MIT, 73 stars | 47 | Дополнительный detector; нет готового reversible proxy |
+| [scrubadub](https://github.com/LeapBeyond/scrubadub) | Pluggable text scrubber | Apache-2.0, 432 stars, старый релиз | 43 | Не выбирать: нет русского профиля, restoration и service layer |
+| [Capital One DataProfiler](https://github.com/capitalone/DataProfiler) | Data profiling / detection | Apache-2.0, ~1.6k stars | 36 | Не proxy; полезен только для offline анализа датасетов |
+| [pullenti-wrapper](https://github.com/pullenti/pullenti-wrapper) | Русский linguistic extractor | Wrapper MIT, архивирован; underlying non-commercial limits | 16 | Не брать из-за лицензирования/архива и производительности |
+
+### Проверены и исключены из open-source shortlist
+
+- [Rebuff](https://github.com/protectai/rebuff) — prompt-injection detector, а не PII masking; архивирован.
+- [Pangea Python SDK](https://github.com/pangeacyber/pangea-python) — SDK открыт, но Redact/AI Guard остаются облачными сервисами, а не self-hosted OSS engine.
+- [Trylon Gateway](https://github.com/trylonai/gateway) — BSL 1.1, не OSI open source; нет re-injection.
+- [Philter AI Proxy](https://github.com/philterd/philter-ai-proxy) — proxy открыт, но основной Philter engine является отдельной зависимостью; решение не self-contained OSS.
+- [RussianDocsOCR](https://github.com/protei300/RussianDocsOCR) — OCR документов, не текстовый PII proxy.
+
+## 7. Что переиспользовать и что разработать
+
+### Переиспользовать
+
+1. **Presidio Analyzer/Anonymizer** — orchestration recognizers, span arbitration, masking/encryption/decryption.
+2. **presidio-ru-recognizers** — checksum-валидацию российских идентификаторов, после ревью и расширения тестов.
+3. **Natasha/Slovnet** — baseline русского `PER/LOC/ORG`; затем сравнить с GLiNER/DeepPavlov на целевом датасете.
+4. Из **pii-mask** — нормализацию русских имён, round-trip тесты, защиту от выдуманных меток и fail-closed поведение.
+5. Из **AI-Gate/Tamga** — lifecycle mapping, metadata-only audit, policy hot reload, rate limiting и нагрузочный контур.
+6. Опционально **LiteLLM** — provider routing/fallback за границей собственного PII-модуля.
+
+### Разработать самим
+
+1. Точный state machine `POST /process`:
+   - новый `payload_id` → mask + atomic save mapping;
+   - тот же `payload_id` → unmask;
+   - идемпотентный повтор запроса;
+   - явная политика третьего и последующих вызовов.
+2. Encrypted distributed vault: tenant namespace, TTL, KMS/key rotation, защита от replay и mixed-tenant token collision.
+3. Полный профиль целевых ПД: место рождения, гражданство, ВУ, орган/код/дата выдачи паспорта, CVV, PIN, имя держателя карты и контекстные составные правила.
+4. Policy layer по системе-потребителю: allowlist, перечень типов, способ masking/tokenization, разрешение demask.
+5. Safe observability: только типы/счётчики/latency, без исходных spans, mapping и payload.
+6. Горизонтальное масштабирование, backpressure/429 и корректная деградация.
+7. Собственный benchmark: качество на русском корпусе, round-trip exactness, ложные срабатывания, 100k-token payload, 1000/2000 RPS и p95/p99.
+
+## 8. Рекомендуемая целевая композиция
+
+```text
+consumer
+  → auth + consumer policy
+  → POST /process adapter
+  → Russian detection ensemble
+       Presidio orchestration
+       + checksum/regex recognizers РФ
+       + Natasha/GLiNER NER
+       + contextual composition rules
+  → reversible tokenization
+  → encrypted payload_id vault
+  → safe metrics/audit
+  → optional LiteLLM/provider gateway
+  → LLM
+```
+
+Оценка практического выбора:
+
+- **для хакатонного MVP:** форк или перенос идей `pii-mask`, затем адаптер `/process` и in-memory/Redis mapping по `payload_id`;
+- **для дальнейшего production-пути:** Presidio-based detector ensemble + собственный vault/API/policy layer;
+- **не рекомендуется:** строить всё на архивированном LLM Guard, принимать LiteLLM guardrail за готовую security boundary или использовать one-way redactor там, где тест требует демаскирование.
+
+## 9. Следующий проверочный шаг
+
+Перед выбором зависимости провести одинаковый spike для трёх вариантов:
+
+1. Presidio + presidio-ru-recognizers + Natasha;
+2. dewil/pii-mask;
+3. Kiji или GLiNER-based detector.
+
+На одном закрытом синтетическом русском наборе измерить:
+
+- span precision/recall/F1 по каждому целевому типу;
+- точность round-trip mask → modified LLM-like text → unmask;
+- ложные срабатывания на публичных лицах и адресах организаций;
+- latency p50/p95/p99;
+- throughput при 1000 RPS;
+- память и время на payload до 100 000 токенов;
+- отсутствие исходных ПД в логах, traces и метриках.
+
+Без этого сравнение README остаётся сравнением заявлений, а не доказательством соответствия требованиям проекта.

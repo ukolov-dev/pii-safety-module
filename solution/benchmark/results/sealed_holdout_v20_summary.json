@@ -1,0 +1,144 @@
+{
+  "dataset_sha256": "017e0664e70badd080d90df61d6d5bb8a9ed278d674fdf0178629edade971f2c",
+  "case_count": 320,
+  "results": [
+    {
+      "detector": "v3.26",
+      "overall": {
+        "true_positive": 711,
+        "false_positive": 23,
+        "false_negative": 569,
+        "precision": 0.9686648501362398,
+        "recall": 0.55546875,
+        "f1": 0.7060575968222443
+      },
+      "exact_entities": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "mask_exact": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "round_trip_exact": {
+        "passed": 320,
+        "total": 320,
+        "rate": 1.0
+      },
+      "per_type_misses": {
+        "ADDRESS_APARTMENT": 40,
+        "ADDRESS_CITY": 80,
+        "ADDRESS_COUNTRY": 40,
+        "ADDRESS_HOUSE": 40,
+        "ADDRESS_POSTAL_CODE": 40,
+        "ADDRESS_STREET": 40,
+        "BIRTH_DATE": 40,
+        "CARDHOLDER_NAME": 40,
+        "DRIVER_LICENSE_RF": 40,
+        "EMAIL": 40,
+        "PASSPORT_ISSUER": 29,
+        "PASSPORT_ISSUE_DATE": 15,
+        "PASSPORT_RF": 40,
+        "PERSON": 10,
+        "PHONE_RF": 35
+      },
+      "per_type_unexpected": {
+        "PASSPORT_ISSUER": 23
+      }
+    },
+    {
+      "detector": "v3.29",
+      "overall": {
+        "true_positive": 711,
+        "false_positive": 23,
+        "false_negative": 569,
+        "precision": 0.9686648501362398,
+        "recall": 0.55546875,
+        "f1": 0.7060575968222443
+      },
+      "exact_entities": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "mask_exact": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "round_trip_exact": {
+        "passed": 320,
+        "total": 320,
+        "rate": 1.0
+      },
+      "per_type_misses": {
+        "ADDRESS_APARTMENT": 40,
+        "ADDRESS_CITY": 80,
+        "ADDRESS_COUNTRY": 40,
+        "ADDRESS_HOUSE": 40,
+        "ADDRESS_POSTAL_CODE": 40,
+        "ADDRESS_STREET": 40,
+        "BIRTH_DATE": 40,
+        "CARDHOLDER_NAME": 40,
+        "DRIVER_LICENSE_RF": 40,
+        "EMAIL": 40,
+        "PASSPORT_ISSUER": 29,
+        "PASSPORT_ISSUE_DATE": 15,
+        "PASSPORT_RF": 40,
+        "PERSON": 10,
+        "PHONE_RF": 35
+      },
+      "per_type_unexpected": {
+        "PASSPORT_ISSUER": 23
+      }
+    },
+    {
+      "detector": "v3.30",
+      "overall": {
+        "true_positive": 711,
+        "false_positive": 23,
+        "false_negative": 569,
+        "precision": 0.9686648501362398,
+        "recall": 0.55546875,
+        "f1": 0.7060575968222443
+      },
+      "exact_entities": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "mask_exact": {
+        "passed": 91,
+        "total": 320,
+        "rate": 0.284375
+      },
+      "round_trip_exact": {
+        "passed": 320,
+        "total": 320,
+        "rate": 1.0
+      },
+      "per_type_misses": {
+        "ADDRESS_APARTMENT": 40,
+        "ADDRESS_CITY": 80,
+        "ADDRESS_COUNTRY": 40,
+        "ADDRESS_HOUSE": 40,
+        "ADDRESS_POSTAL_CODE": 40,
+        "ADDRESS_STREET": 40,
+        "BIRTH_DATE": 40,
+        "CARDHOLDER_NAME": 40,
+        "DRIVER_LICENSE_RF": 40,
+        "EMAIL": 40,
+        "PASSPORT_ISSUER": 29,
+        "PASSPORT_ISSUE_DATE": 15,
+        "PASSPORT_RF": 40,
+        "PERSON": 10,
+        "PHONE_RF": 35
+      },
+      "per_type_unexpected": {
+        "PASSPORT_ISSUER": 23
+      }
+    }
+  ]
+}

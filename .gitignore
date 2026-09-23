@@ -29,3 +29,7 @@ solution/solution-submission-*.zip
 *.pem
 *.key
 *.log
+
+# Local safety copies and submission archives
+solution-v3.26-restored/
+solution/*.zip

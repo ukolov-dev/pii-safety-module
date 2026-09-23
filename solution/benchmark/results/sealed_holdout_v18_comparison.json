@@ -1,0 +1,615 @@
+{
+  "dataset_sha256": "6aee9db0f07b050d8be1a7587f1f5eee04f1be37f604765c5389eede06cd7b8a",
+  "case_count": 336,
+  "entity_count": 1776,
+  "versions": {
+    "v326": {
+      "overall": {
+        "true_positive": 1171,
+        "false_positive": 136,
+        "false_negative": 605,
+        "precision": 0.8959449120122418,
+        "recall": 0.6593468468468469,
+        "f1": 0.7596496918585793
+      },
+      "mask_exact": {
+        "passed": 91,
+        "total": 336,
+        "rate": 0.2708333333333333
+      },
+      "round_trip_exact": {
+        "passed": 336,
+        "total": 336,
+        "rate": 1.0
+      },
+      "by_type": {
+        "ADDRESS_APARTMENT": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_CITY": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_COUNTRY": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_HOUSE": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_POSTAL_CODE": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_STREET": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BANK_CARD": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIRTH_DATE": {
+          "true_positive": 96,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARDHOLDER_NAME": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CITIZENSHIP": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CVV": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DIVISION_CODE": {
+          "true_positive": 0,
+          "false_positive": 8,
+          "false_negative": 96,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "DRIVER_LICENSE_RF": {
+          "true_positive": 48,
+          "false_positive": 36,
+          "false_negative": 0,
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "f1": 0.7272727272727273
+        },
+        "EMAIL": {
+          "true_positive": 144,
+          "false_positive": 0,
+          "false_negative": 48,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "INN": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "PASSPORT_ISSUER": {
+          "true_positive": 0,
+          "false_positive": 36,
+          "false_negative": 48,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PASSPORT_ISSUE_DATE": {
+          "true_positive": 11,
+          "false_positive": 0,
+          "false_negative": 85,
+          "precision": 1.0,
+          "recall": 0.11458333333333333,
+          "f1": 0.205607476635514
+        },
+        "PASSPORT_RF": {
+          "true_positive": 60,
+          "false_positive": 0,
+          "false_negative": 84,
+          "precision": 1.0,
+          "recall": 0.4166666666666667,
+          "f1": 0.5882352941176471
+        },
+        "PERSON": {
+          "true_positive": 236,
+          "false_positive": 0,
+          "false_negative": 4,
+          "precision": 1.0,
+          "recall": 0.9833333333333333,
+          "f1": 0.9915966386554622
+        },
+        "PHONE_RF": {
+          "true_positive": 0,
+          "false_positive": 8,
+          "false_negative": 192,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PIN": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "PLACE_OF_BIRTH": {
+          "true_positive": 0,
+          "false_positive": 48,
+          "false_negative": 48,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "by_category": {
+        "address_contact": {
+          "tp": 384,
+          "fp": 0,
+          "fn": 48,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1": 0.9411764705882353,
+          "error_reasons": {
+            "pure_false_negative": 48
+          }
+        },
+        "clean_public_technical": {
+          "tp": 0,
+          "fp": 16,
+          "fn": 0,
+          "exact": 32,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 0.0,
+          "recall": 1.0,
+          "f1": 0.0,
+          "error_reasons": {
+            "pure_false_positive": 16
+          }
+        },
+        "identity_document": {
+          "tp": 204,
+          "fp": 120,
+          "fn": 228,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 0.6296296296296297,
+          "recall": 0.4722222222222222,
+          "f1": 0.5396825396825397,
+          "error_reasons": {
+            "wrong_type_same_span": 36,
+            "boundary_mismatch": 84,
+            "pure_false_negative": 108
+          }
+        },
+        "ocr_unicode": {
+          "tp": 44,
+          "fp": 0,
+          "fn": 196,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.18333333333333332,
+          "f1": 0.30985915492957744,
+          "error_reasons": {
+            "pure_false_negative": 196
+          }
+        },
+        "payment_bundle": {
+          "tp": 192,
+          "fp": 0,
+          "fn": 0,
+          "exact": 48,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "error_reasons": {}
+        },
+        "record_boundaries": {
+          "tp": 192,
+          "fp": 0,
+          "fn": 96,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "error_reasons": {
+            "pure_false_negative": 96
+          }
+        },
+        "reordered_dates": {
+          "tp": 155,
+          "fp": 0,
+          "fn": 37,
+          "exact": 11,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.8072916666666666,
+          "f1": 0.8933717579250721,
+          "error_reasons": {
+            "pure_false_negative": 37
+          }
+        }
+      },
+      "error_reasons": {
+        "wrong_type_same_span": 36,
+        "boundary_mismatch": 84,
+        "pure_false_negative": 485,
+        "pure_false_positive": 16
+      }
+    },
+    "v328": {
+      "overall": {
+        "true_positive": 1151,
+        "false_positive": 136,
+        "false_negative": 625,
+        "precision": 0.8943278943278943,
+        "recall": 0.6480855855855856,
+        "f1": 0.7515507672216781
+      },
+      "mask_exact": {
+        "passed": 107,
+        "total": 336,
+        "rate": 0.31845238095238093
+      },
+      "round_trip_exact": {
+        "passed": 336,
+        "total": 336,
+        "rate": 1.0
+      },
+      "by_type": {
+        "ADDRESS_APARTMENT": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_CITY": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_COUNTRY": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_HOUSE": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_POSTAL_CODE": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ADDRESS_STREET": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BANK_CARD": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "BIRTH_DATE": {
+          "true_positive": 96,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARDHOLDER_NAME": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CITIZENSHIP": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CVV": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DIVISION_CODE": {
+          "true_positive": 0,
+          "false_positive": 8,
+          "false_negative": 96,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "DRIVER_LICENSE_RF": {
+          "true_positive": 48,
+          "false_positive": 36,
+          "false_negative": 0,
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "f1": 0.7272727272727273
+        },
+        "EMAIL": {
+          "true_positive": 144,
+          "false_positive": 0,
+          "false_negative": 48,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "INN": {
+          "true_positive": 40,
+          "false_positive": 0,
+          "false_negative": 8,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "PASSPORT_ISSUER": {
+          "true_positive": 0,
+          "false_positive": 36,
+          "false_negative": 48,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PASSPORT_ISSUE_DATE": {
+          "true_positive": 27,
+          "false_positive": 0,
+          "false_negative": 69,
+          "precision": 1.0,
+          "recall": 0.28125,
+          "f1": 0.43902439024390244
+        },
+        "PASSPORT_RF": {
+          "true_positive": 60,
+          "false_positive": 0,
+          "false_negative": 84,
+          "precision": 1.0,
+          "recall": 0.4166666666666667,
+          "f1": 0.5882352941176471
+        },
+        "PERSON": {
+          "true_positive": 208,
+          "false_positive": 0,
+          "false_negative": 32,
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1": 0.9285714285714286
+        },
+        "PHONE_RF": {
+          "true_positive": 0,
+          "false_positive": 8,
+          "false_negative": 192,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PIN": {
+          "true_positive": 48,
+          "false_positive": 0,
+          "false_negative": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "PLACE_OF_BIRTH": {
+          "true_positive": 0,
+          "false_positive": 48,
+          "false_negative": 48,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "by_category": {
+        "address_contact": {
+          "tp": 376,
+          "fp": 0,
+          "fn": 56,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.8703703703703703,
+          "f1": 0.9306930693069307,
+          "error_reasons": {
+            "pure_false_negative": 56
+          }
+        },
+        "clean_public_technical": {
+          "tp": 0,
+          "fp": 16,
+          "fn": 0,
+          "exact": 32,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 0.0,
+          "recall": 1.0,
+          "f1": 0.0,
+          "error_reasons": {
+            "pure_false_positive": 16
+          }
+        },
+        "identity_document": {
+          "tp": 204,
+          "fp": 120,
+          "fn": 228,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 0.6296296296296297,
+          "recall": 0.4722222222222222,
+          "f1": 0.5396825396825397,
+          "error_reasons": {
+            "wrong_type_same_span": 36,
+            "boundary_mismatch": 84,
+            "pure_false_negative": 108
+          }
+        },
+        "ocr_unicode": {
+          "tp": 40,
+          "fp": 0,
+          "fn": 200,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1": 0.2857142857142857,
+          "error_reasons": {
+            "pure_false_negative": 200
+          }
+        },
+        "payment_bundle": {
+          "tp": 192,
+          "fp": 0,
+          "fn": 0,
+          "exact": 48,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "error_reasons": {}
+        },
+        "record_boundaries": {
+          "tp": 168,
+          "fp": 0,
+          "fn": 120,
+          "exact": 0,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.5833333333333334,
+          "f1": 0.7368421052631579,
+          "error_reasons": {
+            "pure_false_negative": 120
+          }
+        },
+        "reordered_dates": {
+          "tp": 171,
+          "fp": 0,
+          "fn": 21,
+          "exact": 27,
+          "total": 48,
+          "roundtrip": 48,
+          "precision": 1.0,
+          "recall": 0.890625,
+          "f1": 0.9421487603305785,
+          "error_reasons": {
+            "pure_false_negative": 21
+          }
+        }
+      },
+      "error_reasons": {
+        "wrong_type_same_span": 36,
+        "boundary_mismatch": 84,
+        "pure_false_negative": 505,
+        "pure_false_positive": 16
+      }
+    }
+  }
+}

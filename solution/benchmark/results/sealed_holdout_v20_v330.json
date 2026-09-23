@@ -1,0 +1,8239 @@
+{
+  "case_count": 320,
+  "overall": {
+    "true_positive": 711,
+    "false_positive": 23,
+    "false_negative": 569,
+    "precision": 0.9686648501362398,
+    "recall": 0.55546875,
+    "f1": 0.7060575968222443
+  },
+  "by_type": {
+    "ADDRESS_APARTMENT": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ADDRESS_CITY": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 80,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ADDRESS_COUNTRY": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ADDRESS_HOUSE": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ADDRESS_POSTAL_CODE": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ADDRESS_STREET": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "BANK_CARD": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BIRTH_DATE": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "CARDHOLDER_NAME": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "CITIZENSHIP": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CVV": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DIVISION_CODE": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DRIVER_LICENSE_RF": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "EMAIL": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "INN": {
+      "true_positive": 80,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PASSPORT_ISSUER": {
+      "true_positive": 11,
+      "false_positive": 23,
+      "false_negative": 29,
+      "precision": 0.3235294117647059,
+      "recall": 0.275,
+      "f1": 0.2972972972972973
+    },
+    "PASSPORT_ISSUE_DATE": {
+      "true_positive": 25,
+      "false_positive": 0,
+      "false_negative": 15,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+    },
+    "PASSPORT_RF": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 40,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "PERSON": {
+      "true_positive": 150,
+      "false_positive": 0,
+      "false_negative": 10,
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1": 0.967741935483871
+    },
+    "PHONE_RF": {
+      "true_positive": 85,
+      "false_positive": 0,
+      "false_negative": 35,
+      "precision": 1.0,
+      "recall": 0.7083333333333334,
+      "f1": 0.8292682926829268
+    },
+    "PIN": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PLACE_OF_BIRTH": {
+      "true_positive": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "mask_exact": {
+    "passed": 91,
+    "total": 320,
+    "rate": 0.284375
+  },
+  "round_trip_exact": {
+    "passed": 320,
+    "total": 320,
+    "rate": 1.0
+  },
+  "cases": [
+    {
+      "id": "v20-001",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-002",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PHONE_RF",
+          114,
+          125
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-003",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          98
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-004",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          123
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-005",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-006",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-007",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-008",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          130,
+          134
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-009",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-010",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-011",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-012",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          41,
+          53
+        ],
+        [
+          "EMAIL",
+          68,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-013",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-014",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PHONE_RF",
+          114,
+          125
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-015",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          50,
+          60
+        ],
+        [
+          "PASSPORT_RF",
+          74,
+          85
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-016",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          122
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-017",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-018",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-019",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-020",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-021",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-022",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-023",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-024",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          121
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-025",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-026",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          106
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-027",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-028",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-029",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-030",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-031",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          52
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-032",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          101
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-033",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-034",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-035",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-036",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          41,
+          53
+        ],
+        [
+          "EMAIL",
+          68,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-037",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-038",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          106
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-039",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          105,
+          108
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          87,
+          90
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          76
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-040",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-041",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          104
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-042",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-043",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          52
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-044",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-045",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ],
+        [
+          "PERSON",
+          8,
+          30
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-046",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          129,
+          130
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          77
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          111,
+          114
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          89,
+          100
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-047",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          51
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-048",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-049",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          107,
+          109
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          57
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          88,
+          92
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          69,
+          77
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-050",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-051",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-052",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-053",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-054",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ],
+        [
+          "PERSON",
+          6,
+          28
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-055",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          126,
+          134
+        ],
+        [
+          "PHONE_RF",
+          62,
+          73
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-056",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          131,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-057",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-058",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          121,
+          127
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-059",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          128,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-060",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-061",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-062",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-063",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-064",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          123,
+          129
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-065",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          133,
+          139
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-066",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-067",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-068",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-069",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-070",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          121,
+          127
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-071",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          108,
+          110
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          89,
+          93
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          78
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-072",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          124,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-073",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-074",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          119,
+          122
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          101,
+          104
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          90
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-075",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-076",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          123,
+          129
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-077",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-078",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-079",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          126,
+          134
+        ],
+        [
+          "PHONE_RF",
+          62,
+          73
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-080",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-081",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          50,
+          60
+        ],
+        [
+          "PASSPORT_RF",
+          74,
+          85
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-082",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PERSON",
+          14,
+          36
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-083",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-084",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          41,
+          53
+        ],
+        [
+          "EMAIL",
+          68,
+          100
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-085",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          119,
+          127
+        ],
+        [
+          "PHONE_RF",
+          58,
+          69
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-086",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-087",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          50,
+          60
+        ],
+        [
+          "PASSPORT_RF",
+          74,
+          85
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-088",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-089",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-090",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-091",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-092",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          131,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-093",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          50,
+          60
+        ],
+        [
+          "PASSPORT_RF",
+          74,
+          85
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-094",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-095",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          103
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-096",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          123
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-097",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-098",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-099",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-100",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          48,
+          58
+        ],
+        [
+          "PASSPORT_RF",
+          72,
+          83
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-101",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          112
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          90,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          79
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-102",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-103",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-104",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          122
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-105",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-106",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-107",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          112
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-108",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-109",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-110",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-111",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-112",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          53
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-113",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-114",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-115",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-116",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          51,
+          61
+        ],
+        [
+          "PASSPORT_RF",
+          75,
+          86
+        ],
+        [
+          "PHONE_RF",
+          118,
+          129
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-117",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          101
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-118",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PERSON",
+          14,
+          36
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-119",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          128,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-120",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-121",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          119,
+          127
+        ],
+        [
+          "PHONE_RF",
+          58,
+          69
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-122",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          118,
+          120
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          101,
+          103
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          90
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-123",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-124",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-125",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-126",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-127",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          102
+        ],
+        [
+          "PHONE_RF",
+          110,
+          121
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-128",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-129",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          112
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-130",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-131",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-132",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          41,
+          53
+        ],
+        [
+          "EMAIL",
+          68,
+          100
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-133",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-134",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-135",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-136",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          48,
+          58
+        ],
+        [
+          "PASSPORT_RF",
+          72,
+          83
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-137",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-138",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-139",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          52
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-140",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          131,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-141",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-142",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PERSON",
+          14,
+          36
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-143",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-144",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-145",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-146",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-147",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-148",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          53
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-149",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          133,
+          139
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-150",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-151",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          52
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-152",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          121
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-153",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-154",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          121,
+          127
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-155",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          103
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-156",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          41,
+          53
+        ],
+        [
+          "EMAIL",
+          68,
+          100
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-157",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-158",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-159",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-160",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ],
+        [
+          "PHONE_RF",
+          115,
+          126
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-161",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          105
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-162",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-163",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          52
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-164",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          102
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-165",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ],
+        [
+          "PERSON",
+          8,
+          30
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-166",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-167",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-168",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-169",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-170",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-171",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          107,
+          110
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          89,
+          92
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          78
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-172",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-173",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          105
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-174",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ],
+        [
+          "PERSON",
+          6,
+          28
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-175",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          102
+        ],
+        [
+          "PHONE_RF",
+          110,
+          121
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-176",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-177",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          111
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-178",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          125,
+          128
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          77
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          106,
+          110
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          89,
+          95
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-179",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-180",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-181",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          104,
+          106
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          57
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          87,
+          89
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          69,
+          76
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-182",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          129,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-183",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-184",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          122
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-185",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-186",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-187",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          108,
+          111
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          89,
+          93
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          78
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-188",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-189",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          101
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-190",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-191",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          128,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-192",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          124,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-193",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          119,
+          127
+        ],
+        [
+          "PHONE_RF",
+          58,
+          69
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-194",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-195",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          123,
+          128
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-196",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ],
+        [
+          "PHONE_RF",
+          115,
+          126
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-197",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-198",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-199",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-200",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-201",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          122,
+          128
+        ],
+        [
+          "PERSON",
+          8,
+          30
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-202",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ],
+        [
+          "PERSON",
+          14,
+          36
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-203",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-204",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          104,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          93
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-205",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-206",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          129,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-207",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          105,
+          108
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          87,
+          90
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          76
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-208",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-209",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-210",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          51,
+          61
+        ],
+        [
+          "PASSPORT_RF",
+          75,
+          86
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-211",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          126,
+          134
+        ],
+        [
+          "PHONE_RF",
+          62,
+          73
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-212",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          131,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-213",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          107,
+          110
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          90,
+          92
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          79
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-214",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-215",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          128,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-216",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-217",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          69
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          69
+        ]
+      ]
+    },
+    {
+      "id": "v20-218",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-219",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-220",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          48,
+          58
+        ],
+        [
+          "PASSPORT_RF",
+          72,
+          83
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-221",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-222",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-223",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          126,
+          134
+        ],
+        [
+          "PHONE_RF",
+          62,
+          73
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-224",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          123
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          102,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          91
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-225",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          101
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-226",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-227",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          110,
+          113
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          95
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-228",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-229",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          104
+        ],
+        [
+          "PHONE_RF",
+          112,
+          123
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-230",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-231",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-232",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          123,
+          129
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-233",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          112
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-234",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          40,
+          52
+        ],
+        [
+          "EMAIL",
+          67,
+          99
+        ],
+        [
+          "PERSON",
+          6,
+          28
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-235",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-236",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          131,
+          135
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-237",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-238",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-239",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-240",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          34,
+          47
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-241",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          106,
+          109
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          57
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          88,
+          91
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          69,
+          77
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-242",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          49
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-243",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          106,
+          108
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          89,
+          91
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          78
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-244",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-245",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-246",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-247",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          106,
+          107
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          58
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          87,
+          91
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          70,
+          76
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-248",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-249",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          109,
+          112
+        ],
+        [
+          "ADDRESS_CITY",
+          52,
+          60
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          19
+        ],
+        [
+          "ADDRESS_HOUSE",
+          91,
+          94
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          36,
+          42
+        ],
+        [
+          "ADDRESS_STREET",
+          72,
+          80
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-250",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          121,
+          127
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-251",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          79
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          45,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "v20-252",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          121,
+          124
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          104,
+          106
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          93
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-253",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "CARDHOLDER_NAME",
+          37,
+          50
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-254",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          80
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          105,
+          115
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-255",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-256",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-257",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ],
+        [
+          "PHONE_RF",
+          116,
+          127
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-258",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          117,
+          118
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          70
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          99,
+          102
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          82,
+          88
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-259",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          47,
+          57
+        ],
+        [
+          "PASSPORT_RF",
+          71,
+          82
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-260",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          51,
+          61
+        ],
+        [
+          "PASSPORT_RF",
+          75,
+          86
+        ],
+        [
+          "PHONE_RF",
+          118,
+          129
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-261",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-262",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          129,
+          132
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          77
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          111,
+          114
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          89,
+          100
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-263",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-264",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          123
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          73
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          103,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          85,
+          92
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-265",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-266",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_APARTMENT",
+          120,
+          123
+        ],
+        [
+          "ADDRESS_CITY",
+          66,
+          72
+        ],
+        [
+          "ADDRESS_COUNTRY",
+          13,
+          33
+        ],
+        [
+          "ADDRESS_HOUSE",
+          101,
+          105
+        ],
+        [
+          "ADDRESS_POSTAL_CODE",
+          50,
+          56
+        ],
+        [
+          "ADDRESS_STREET",
+          84,
+          90
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-267",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-268",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          123,
+          129
+        ],
+        [
+          "PHONE_RF",
+          60,
+          71
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-269",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          43,
+          55
+        ],
+        [
+          "EMAIL",
+          70,
+          105
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-270",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          51,
+          61
+        ],
+        [
+          "PASSPORT_RF",
+          75,
+          86
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-271",
+      "counts": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          42,
+          54
+        ],
+        [
+          "EMAIL",
+          69,
+          102
+        ],
+        [
+          "PHONE_RF",
+          110,
+          121
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-272",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          51,
+          61
+        ],
+        [
+          "PASSPORT_RF",
+          75,
+          86
+        ],
+        [
+          "PHONE_RF",
+          118,
+          129
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-273",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          50,
+          60
+        ],
+        [
+          "PASSPORT_RF",
+          74,
+          85
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-274",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-275",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "ADDRESS_CITY",
+          128,
+          136
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-276",
+      "counts": {
+        "true_positive": 3,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "BIRTH_DATE",
+          49,
+          59
+        ],
+        [
+          "PASSPORT_RF",
+          73,
+          84
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-277",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-278",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "DRIVER_LICENSE_RF",
+          44,
+          56
+        ],
+        [
+          "EMAIL",
+          71,
+          107
+        ]
+      ],
+      "unexpected": []
+    },
+    {
+      "id": "v20-279",
+      "counts": {
+        "true_positive": 4,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-280",
+      "counts": {
+        "true_positive": 2,
+        "false_positive": 1,
+        "false_negative": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714
+      },
+      "mask_exact": false,
+      "round_trip_exact": true,
+      "missing": [
+        [
+          "PASSPORT_ISSUER",
+          41,
+          81
+        ],
+        [
+          "PASSPORT_ISSUE_DATE",
+          106,
+          116
+        ]
+      ],
+      "unexpected": [
+        [
+          "PASSPORT_ISSUER",
+          51,
+          80
+        ]
+      ]
+    },
+    {
+      "id": "v20-281",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-282",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-283",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-284",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-285",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-286",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-287",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-288",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-289",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-290",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-291",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-292",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-293",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-294",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-295",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-296",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-297",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-298",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-299",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-300",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-301",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-302",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-303",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-304",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-305",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-306",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-307",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-308",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-309",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-310",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-311",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-312",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-313",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-314",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-315",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-316",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-317",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-318",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-319",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    },
+    {
+      "id": "v20-320",
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "mask_exact": true,
+      "round_trip_exact": true,
+      "missing": [],
+      "unexpected": []
+    }
+  ],
+  "detector": "v3.30",
+  "exact_entities": {
+    "passed": 91,
+    "total": 320,
+    "rate": 0.284375
+  },
+  "per_type_misses": {
+    "ADDRESS_APARTMENT": 40,
+    "ADDRESS_CITY": 80,
+    "ADDRESS_COUNTRY": 40,
+    "ADDRESS_HOUSE": 40,
+    "ADDRESS_POSTAL_CODE": 40,
+    "ADDRESS_STREET": 40,
+    "BIRTH_DATE": 40,
+    "CARDHOLDER_NAME": 40,
+    "DRIVER_LICENSE_RF": 40,
+    "EMAIL": 40,
+    "PASSPORT_ISSUER": 29,
+    "PASSPORT_ISSUE_DATE": 15,
+    "PASSPORT_RF": 40,
+    "PERSON": 10,
+    "PHONE_RF": 35
+  },
+  "per_type_unexpected": {
+    "PASSPORT_ISSUER": 23
+  }
+}
